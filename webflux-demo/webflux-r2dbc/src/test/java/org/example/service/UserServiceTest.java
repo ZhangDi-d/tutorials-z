@@ -1,6 +1,7 @@
 package org.example.service;
 
 import org.example.AbstractTest;
+import org.example.controller.UserController;
 import org.example.entity.User;
 import org.junit.jupiter.api.Test;
 import org.slf4j.Logger;
@@ -20,6 +21,8 @@ class UserServiceTest extends AbstractTest {
 
     @Resource
     private UserService userService;
+    @Resource
+    private UserController userController;
 
 
     @Test
@@ -43,8 +46,10 @@ class UserServiceTest extends AbstractTest {
 //
 //        Mono<Integer> wangwu = userService.add(new User("wangwu", "123456"));
 //        StepVerifier.create(wangwu).expectNext(10).verifyComplete();
-        Mono<Integer> zhaoliu = userService.add(new User("zhaoliu", "123456"));
-        StepVerifier.create(zhaoliu).expectNext(11).verifyComplete();
+//        Mono<Integer> zhaoliu = userService.add(new User("zhaoliu", "123456"));
+//        StepVerifier.create(zhaoliu).expectNext(11).verifyComplete();
+
+
     }
 
 

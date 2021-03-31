@@ -1,16 +1,23 @@
 package org.example.service;
 
+import io.r2dbc.spi.ConnectionFactory;
 import org.example.entity.User;
 import org.example.repository.UserRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.r2dbc.core.R2dbcEntityTemplate;
+import org.springframework.r2dbc.core.DatabaseClient;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.ReactiveTransactionManager;
 import org.springframework.transaction.annotation.Transactional;
+import org.springframework.transaction.reactive.TransactionalOperator;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
+import javax.annotation.Resource;
 import java.util.Objects;
+import java.util.function.Consumer;
 import java.util.function.Function;
 
 /**
@@ -25,6 +32,8 @@ public class UserService {
 
     @Autowired
     private UserRepository userRepository;
+
+
 
     /**
      * 查询用户列表
@@ -57,7 +66,7 @@ public class UserService {
      * @param queryUser 添加用户信息 DTO
      * @return 添加成功的用户编号
      */
-    @Transactional
+    @Transactional(rollbackFor=Exception.class,value = "reactiveTransactionManager")   //https://spring.hhui.top/spring-blog/2020/02/03/200203-SpringBoot%E7%B3%BB%E5%88%97%E6%95%99%E7%A8%8B%E4%B9%8B%E4%BA%8B%E5%8A%A1%E4%B8%8D%E7%94%9F%E6%95%88%E7%9A%84%E5%87%A0%E7%A7%8Dcase/
     public Mono<Integer> add(User queryUser) {
         Mono<User> user = userRepository.findByUsername(queryUser.getUsername());
 
@@ -78,8 +87,9 @@ public class UserService {
                             @Override
                             public Mono<Integer> apply(User user) {
                                 // 如果编号为偶数，抛出异常。
-                                if (user.getId() % 2 == 0) {
-                                    return Mono.error(new RuntimeException("test exception..."));
+                                if(true){ //if (user.getId() % 2 == 0) {
+                                    throw  new RuntimeException("test exception...");
+                                    //return Mono.error(new RuntimeException("test exception..."));
                                 }
 
                                 // 返回编号
@@ -87,8 +97,40 @@ public class UserService {
                             }
                         });
                     }
-
                 });
+    }
+
+    @Resource
+    private ReactiveTransactionManager reactiveTransactionManager;
+    @Resource
+    private ConnectionFactory connectionFactory;
+
+    //https://docs.spring.io/spring-data/r2dbc/docs/current/reference/html/#upgrading.1.1-1.2.deprecation  这玩意废弃了
+    @Resource
+    DatabaseClient databaseClient;
+    @Resource
+    R2dbcEntityTemplate r2dbcEntityTemplate;
+
+    //https://spring.hhui.top/spring-blog/2020/02/03/200203-SpringBoot%E7%B3%BB%E5%88%97%E6%95%99%E7%A8%8B%E4%B9%8B%E4%BA%8B%E5%8A%A1%E4%B8%8D%E7%94%9F%E6%95%88%E7%9A%84%E5%87%A0%E7%A7%8Dcase/
+    @Transactional(rollbackFor=Exception.class)
+    public Mono<Integer> add1(User queryUser) {
+        LOGGER.info("connectionFactory null : "+(connectionFactory==null));
+        LOGGER.info("reactiveTransactionManager null : "+(reactiveTransactionManager==null));
+        return this.r2dbcEntityTemplate.insert(User.class)
+                .using(queryUser)
+                .doOnSuccess(new Consumer<User>() {
+                    @Override
+                    public void accept(User user) {
+                        if (!user.getUsername().contains("exception")){
+                            LOGGER.info("=====================add normal=================");
+                        }else{
+                            LOGGER.error("=====================add exception=================");
+                            throw new RuntimeException("add1 exception test............");
+                        }
+
+                    }
+                })
+                .map(User::getId);
     }
 
     /**
