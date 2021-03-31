@@ -21,7 +21,7 @@ public class UserController {
     private UserService userService;
 
     /**
-     * 测试 事务  注释 DatabaseConfiguration  事务生效了
+     * transaction work
      * @param user
      * @return
      */
@@ -29,5 +29,16 @@ public class UserController {
     @PostMapping("/add1")
     public Mono<Integer> add1(@RequestBody User user){
         return userService.add1(user);
+    }
+
+
+    /**
+     * transaction not ork
+     * @param user
+     * @return
+     */
+    @PostMapping("/add2")
+    public Mono<Integer> add2(@RequestBody User user){
+        return userService.add2(user);
     }
 }
