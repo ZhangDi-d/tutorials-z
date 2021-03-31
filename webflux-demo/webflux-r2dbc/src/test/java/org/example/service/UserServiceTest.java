@@ -2,7 +2,6 @@ package org.example.service;
 
 import org.example.AbstractTest;
 import org.example.entity.User;
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -10,12 +9,7 @@ import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 import reactor.test.StepVerifier;
 
-
 import javax.annotation.Resource;
-import java.time.LocalDateTime;
-import java.time.ZoneId;
-import java.util.Date;
-import java.util.function.Consumer;
 
 /**
  * @author dizhang
@@ -39,7 +33,7 @@ class UserServiceTest extends AbstractTest {
     @Test
     void get() {
         Mono<User> userMono = userService.get(11);
-        StepVerifier.create(userMono).expectNextMatches(user->user.getUsername().equals("zhaoliu")).verifyComplete();
+        StepVerifier.create(userMono).expectNextMatches(user -> user.getUsername().equals("zhaoliu")).verifyComplete();
     }
 
     @Test
@@ -49,7 +43,7 @@ class UserServiceTest extends AbstractTest {
 //
 //        Mono<Integer> wangwu = userService.add(new User("wangwu", "123456"));
 //        StepVerifier.create(wangwu).expectNext(10).verifyComplete();
-        Mono<Integer> zhaoliu = userService.add(new User( "zhaoliu", "123456"));
+        Mono<Integer> zhaoliu = userService.add(new User("zhaoliu", "123456"));
         StepVerifier.create(zhaoliu).expectNext(11).verifyComplete();
     }
 
@@ -73,7 +67,7 @@ class UserServiceTest extends AbstractTest {
     }
 
     @Test
-    void test1(){
+    void test1() {
         Flux<String> source = Flux.just("John", "Monica", "Mark", "Cloe", "Frank", "Casper", "Olivia", "Emily", "Cate")
                 .filter(name -> name.length() == 4)
                 .map(String::toUpperCase);

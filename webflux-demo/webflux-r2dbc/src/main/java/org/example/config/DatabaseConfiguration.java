@@ -3,9 +3,7 @@ package org.example.config;
 import com.github.jasync.r2dbc.mysql.JasyncConnectionFactory;
 import com.github.jasync.sql.db.mysql.pool.MySQLConnectionFactory;
 import com.github.jasync.sql.db.mysql.util.URLParser;
-import io.r2dbc.spi.ConnectionFactories;
 import io.r2dbc.spi.ConnectionFactory;
-import io.r2dbc.spi.ConnectionFactoryOptions;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.autoconfigure.r2dbc.R2dbcProperties;
 import org.springframework.context.annotation.Bean;
@@ -15,15 +13,13 @@ import org.springframework.r2dbc.connection.R2dbcTransactionManager;
 import org.springframework.transaction.ReactiveTransactionManager;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
-import java.net.URI;
 import java.net.URISyntaxException;
 import java.nio.charset.StandardCharsets;
-import java.util.List;
 
 /**
  * @author dizhang
  * @date 2021-03-26
- *
+ * <p>
  * 注意 ： https://docs.spring.io/spring-data/r2dbc/docs/1.2.6/reference/html/#new-features  spring 版本 5.3.5 +
  */
 @Configuration
@@ -70,7 +66,7 @@ public class DatabaseConfiguration extends AbstractR2dbcConfiguration {  //exten
     //https://github.com/joshlong/reactive-mysql-with-jasync-and-r2dbc/blob/master/src/main/java/com/example/rx/BootifulReactiveMySqlApplication.java
     @Override
     public ConnectionFactory connectionFactory() {
-        String url ="mysql://root:123456@127.0.0.1:3306/webflux-r2dbc";  //mysql://orders:orders@127.0.0.1:3306/orders
+        String url = "mysql://root:123456@127.0.0.1:3306/webflux-r2dbc";  //mysql://orders:orders@127.0.0.1:3306/orders
         return new JasyncConnectionFactory(new MySQLConnectionFactory(URLParser.INSTANCE.parseOrDie(url, StandardCharsets.UTF_8)));
     }
 //
@@ -78,8 +74,6 @@ public class DatabaseConfiguration extends AbstractR2dbcConfiguration {  //exten
 //    public ConnectionFactory connectionFactory2(R2dbcProperties properties) throws URISyntaxException {
 //        return ConnectionFactories.get(url);
 //    }
-
-
 
 
     @Bean
