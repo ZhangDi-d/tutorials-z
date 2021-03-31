@@ -22,23 +22,13 @@ public class UserController {
 
     /**
      * transaction work
+     *
      * @param user
      * @return
      */
 
     @PostMapping("/add1")
-    public Mono<Integer> add1(@RequestBody User user){
+    public Mono<Integer> add1(@RequestBody User user) {
         return userService.add1(user);
-    }
-
-
-    /**
-     * transaction not ork
-     * @param user
-     * @return
-     */
-    @PostMapping("/add2")
-    public Mono<Integer> add2(@RequestBody User user){
-        return userService.add2(user);
     }
 }
