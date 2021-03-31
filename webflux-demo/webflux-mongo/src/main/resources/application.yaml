@@ -1,0 +1,22 @@
+spring:
+  data:
+    # MongoDB 配置项，对应 MongoProperties 类
+    mongodb:
+      #      host: 127.0.0.1
+      #      port: 27017
+      #      database: test01
+      #      username: test01
+      #      password: 123456
+      #      authentication-database: test01
+      uri: mongodb://test01:123456@localhost:27017/test01?authSource=test01
+      database: test01
+
+
+
+logging:
+  level:
+    org:
+      springframework:
+        data:
+          mongodb:
+            core: DEBUG # 打印 mongodb 操作的具体语句。生产环境下，不建议开启。

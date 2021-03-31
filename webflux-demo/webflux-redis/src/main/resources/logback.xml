@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 只需配置好 log.dir 和 projectname 属性-->
+<configuration debug="false">
+    <property name="log.dir" value="logs/webflux-demo/webflux-redis"/>
+    <property name="projectname" value="webflux-redis"/>
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <target>System.out</target>
+        <encoder charset="UTF-8">
+            <pattern>%highlight([%-5p]) %magenta([%thread]) [%date{yyyy-MM-dd HH:mm:ss.SSS, Asia/Shanghai}] %cyan([%c:%L]) - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <appender name="debugAppenderRule" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${log.dir}/debug.log</file>
+        <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+            <level>debug</level>
+        </filter>
+
+        <rollingPolicy class="ch.qos.logback.core.rolling.FixedWindowRollingPolicy">
+            <fileNamePattern>${log.dir}/debug-%i.log</fileNamePattern>
+            <minIndex>1</minIndex>
+            <maxIndex>20</maxIndex>
+        </rollingPolicy>
+
+        <triggeringPolicy class="ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy">
+            <maxFileSize>100MB</maxFileSize>
+        </triggeringPolicy>
+
+        <encoder charset="UTF-8">
+            <pattern>[%-5p] [%thread] [%date{yyyy-MM-dd HH:mm:ss.SSS, Asia/Shanghai}] [%c:%L] - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <appender name="infoAppenderRule" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${log.dir}/info.log</file>
+        <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+            <level>INFO</level>
+        </filter>
+
+        <rollingPolicy class="ch.qos.logback.core.rolling.FixedWindowRollingPolicy">
+            <fileNamePattern>${log.dir}/info-%i.log</fileNamePattern>
+            <minIndex>1</minIndex>
+            <maxIndex>20</maxIndex>
+        </rollingPolicy>
+
+        <triggeringPolicy class="ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy">
+            <maxFileSize>100MB</maxFileSize>
+        </triggeringPolicy>
+
+        <encoder charset="UTF-8">
+            <pattern>[%-5p] [%thread] [%date{yyyy-MM-dd HH:mm:ss.SSS, Asia/Shanghai}] [%c:%L] - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <appender name="warnAppenderRule" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${log.dir}/warn.log</file>
+        <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+            <level>warn</level>
+        </filter>
+
+        <rollingPolicy class="ch.qos.logback.core.rolling.FixedWindowRollingPolicy">
+            <fileNamePattern>${log.dir}/warn-%i.log</fileNamePattern>
+            <minIndex>1</minIndex>
+            <maxIndex>20</maxIndex>
+        </rollingPolicy>
+
+        <triggeringPolicy class="ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy">
+            <maxFileSize>100MB</maxFileSize>
+        </triggeringPolicy>
+
+        <encoder charset="UTF-8">
+            <pattern>[%-5p] [%thread] [%date{yyyy-MM-dd HH:mm:ss.SSS, Asia/Shanghai}] [%c:%L] - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <appender name="errorAppenderRule" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${log.dir}/error.log</file>
+        <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+            <level>ERROR</level>
+        </filter>
+
+        <rollingPolicy class="ch.qos.logback.core.rolling.FixedWindowRollingPolicy">
+            <fileNamePattern>${log.dir}/error-%i.log</fileNamePattern>
+            <minIndex>1</minIndex>
+            <maxIndex>10</maxIndex>
+        </rollingPolicy>
+
+        <triggeringPolicy class="ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy">
+            <maxFileSize>1GB</maxFileSize>
+        </triggeringPolicy>
+
+        <encoder charset="UTF-8">
+            <pattern>[%-5p] [%thread] [%date{yyyy-MM-dd HH:mm:ss.SSS, Asia/Shanghai}] [%c:%L] - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+
+    <appender name="debugAppender" class="ch.qos.logback.classic.AsyncAppender">
+        <!-- 不丢失日志.默认的,如果队列的80%已满,则会丢弃TRACT、DEBUG、INFO级别的日志 -->
+        <discardingThreshold>0</discardingThreshold>
+        <!-- 更改默认的队列的深度,该值会影响性能.默认值为256 -->
+        <queueSize>2048</queueSize>.
+        <!-- 添加附加的appender,最多只能添加一个 -->
+        <appender-ref ref="debugAppenderRule"/>
+        <includeCallerData>true</includeCallerData>
+    </appender>
+
+    <appender name="infoAppender" class="ch.qos.logback.classic.AsyncAppender">
+        <!-- 不丢失日志.默认的,如果队列的80%已满,则会丢弃TRACT、DEBUG、INFO级别的日志 -->
+        <discardingThreshold>0</discardingThreshold>
+        <!-- 更改默认的队列的深度,该值会影响性能.默认值为256 -->
+        <queueSize>2048</queueSize>.
+        <!-- 添加附加的appender,最多只能添加一个 -->
+        <appender-ref ref="infoAppenderRule"/>
+        <includeCallerData>true</includeCallerData>
+    </appender>
+
+    <appender name="warnAppender" class="ch.qos.logback.classic.AsyncAppender">
+        <!-- 不丢失日志.默认的,如果队列的80%已满,则会丢弃TRACT、DEBUG、INFO级别的日志 -->
+        <discardingThreshold>0</discardingThreshold>
+        <!-- 更改默认的队列的深度,该值会影响性能.默认值为256 -->
+        <queueSize>2048</queueSize>.
+        <!-- 添加附加的appender,最多只能添加一个 -->
+        <appender-ref ref="warnAppenderRule"/>
+        <includeCallerData>true</includeCallerData>
+    </appender>
+
+    <appender name="errorAppender" class="ch.qos.logback.classic.AsyncAppender">
+        <!-- 不丢失日志.默认的,如果队列的80%已满,则会丢弃TRACT、DEBUG、INFO级别的日志 -->
+        <discardingThreshold>0</discardingThreshold>
+        <!-- 更改默认的队列的深度,该值会影响性能.默认值为256 -->
+        <queueSize>2048</queueSize>.
+        <!-- 添加附加的appender,最多只能添加一个 -->
+        <appender-ref ref="errorAppenderRule"/>
+        <includeCallerData>true</includeCallerData>
+    </appender>
+
+    <logger name="org.example">
+        <level value="DEBUG"/>
+        <appender-ref ref="errorAppender"/>
+        <appender-ref ref="warnAppender"/>
+        <appender-ref ref="infoAppender"/>
+        <appender-ref ref="debugAppender"/>
+    </logger>
+
+    <root>
+        <level value="INFO"/>
+        <appender-ref ref="STDOUT"/>
+    </root>
+</configuration>
