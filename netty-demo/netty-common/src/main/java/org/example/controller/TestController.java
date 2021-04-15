@@ -13,6 +13,8 @@ import java.util.List;
 @RestController
 public class TestController implements TestInter {
 
+    private static List<String> strings = List.of("1");
+
     @GetMapping(value = "/test0/{name}", headers = {"servicename=test0"})
     public Response<String> test0(@PathVariable String name) {
         System.out.println("test0 " + name);
@@ -49,9 +51,6 @@ public class TestController implements TestInter {
         System.out.println("norestful " + name);
         return name;
     }
-
-
-    private static List<String> strings = List.of("1");
 
     @PostMapping(value = "test1")
     public String norestful1(@RequestBody User user) {

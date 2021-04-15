@@ -1,0 +1,433 @@
+2021-04-15 11:11:31,355 ERROR [main] o.s.b.d.LoggingFailureAnalysisReporter.(): 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2021-04-15 11:12:39,687 ERROR [nioEventLoopGroup-3-2] o.e.s.h.NettyServerHandler.(): [exceptionCaught][连接(454905a0) 发生异常]
+java.net.SocketException: Connection reset
+	at sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:345) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:376) ~[?:?]
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:253) ~[netty-all-4.1.58.Final.jar:4.1.58.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1134) ~[netty-all-4.1.58.Final.jar:4.1.58.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350) ~[netty-all-4.1.58.Final.jar:4.1.58.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151) [netty-all-4.1.58.Final.jar:4.1.58.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:719) [netty-all-4.1.58.Final.jar:4.1.58.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:655) [netty-all-4.1.58.Final.jar:4.1.58.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:581) [netty-all-4.1.58.Final.jar:4.1.58.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493) [netty-all-4.1.58.Final.jar:4.1.58.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989) [netty-all-4.1.58.Final.jar:4.1.58.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) [netty-all-4.1.58.Final.jar:4.1.58.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) [netty-all-4.1.58.Final.jar:4.1.58.Final]
+	at java.lang.Thread.run(Thread.java:832) [?:?]
+2021-04-15 11:26:40,875 ERROR [nioEventLoopGroup-2-1] o.e.c.h.NettyClientHandler.(): [exceptionCaught][连接(bf7c47bf) 发生异常]
+java.net.SocketException: Connection reset
+	at sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:345) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:376) ~[?:?]
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:253) ~[netty-all-4.1.58.Final.jar:4.1.58.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1134) ~[netty-all-4.1.58.Final.jar:4.1.58.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350) ~[netty-all-4.1.58.Final.jar:4.1.58.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151) [netty-all-4.1.58.Final.jar:4.1.58.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:719) [netty-all-4.1.58.Final.jar:4.1.58.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:655) [netty-all-4.1.58.Final.jar:4.1.58.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:581) [netty-all-4.1.58.Final.jar:4.1.58.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493) [netty-all-4.1.58.Final.jar:4.1.58.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989) [netty-all-4.1.58.Final.jar:4.1.58.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) [netty-all-4.1.58.Final.jar:4.1.58.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) [netty-all-4.1.58.Final.jar:4.1.58.Final]
+	at java.lang.Thread.run(Thread.java:832) [?:?]
+2021-04-15 11:27:02,923 ERROR [nioEventLoopGroup-2-3] o.e.c.NettyClient.(): [start][Netty Client 连接服务器(127.0.0.1:8888) 失败]
+2021-04-15 11:30:22,956 ERROR [nioEventLoopGroup-2-5] o.e.c.h.NettyClientHandler.(): [exceptionCaught][连接(14137a04) 发生异常]
+io.netty.handler.timeout.ReadTimeoutException: null
+2021-04-15 11:33:42,980 ERROR [nioEventLoopGroup-2-7] o.e.c.h.NettyClientHandler.(): [exceptionCaught][连接(7e1510a4) 发生异常]
+io.netty.handler.timeout.ReadTimeoutException: null
+2021-04-15 11:36:50,772 ERROR [nioEventLoopGroup-2-1] o.e.c.h.NettyClientHandler.(): [exceptionCaught][连接(33aabaf7) 发生异常]
+io.netty.handler.timeout.ReadTimeoutException: null
+2021-04-15 11:37:02,999 ERROR [nioEventLoopGroup-2-1] o.e.c.h.NettyClientHandler.(): [exceptionCaught][连接(08f60fce) 发生异常]
+io.netty.handler.timeout.ReadTimeoutException: null
+2021-04-15 11:40:10,799 ERROR [nioEventLoopGroup-2-3] o.e.c.h.NettyClientHandler.(): [exceptionCaught][连接(b006bc32) 发生异常]
+io.netty.handler.timeout.ReadTimeoutException: null
+2021-04-15 11:40:23,011 ERROR [nioEventLoopGroup-2-3] o.e.c.h.NettyClientHandler.(): [exceptionCaught][连接(b2bd32e1) 发生异常]
+io.netty.handler.timeout.ReadTimeoutException: null
+2021-04-15 11:41:37,863 ERROR [nioEventLoopGroup-3-7] o.e.s.h.NettyServerHandler.(): [exceptionCaught][连接(600d41a2) 发生异常]
+java.net.SocketException: Connection reset
+	at sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:345) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:376) ~[?:?]
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:253) ~[netty-all-4.1.58.Final.jar:4.1.58.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1134) ~[netty-all-4.1.58.Final.jar:4.1.58.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350) ~[netty-all-4.1.58.Final.jar:4.1.58.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151) [netty-all-4.1.58.Final.jar:4.1.58.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:719) [netty-all-4.1.58.Final.jar:4.1.58.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:655) [netty-all-4.1.58.Final.jar:4.1.58.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:581) [netty-all-4.1.58.Final.jar:4.1.58.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493) [netty-all-4.1.58.Final.jar:4.1.58.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989) [netty-all-4.1.58.Final.jar:4.1.58.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) [netty-all-4.1.58.Final.jar:4.1.58.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) [netty-all-4.1.58.Final.jar:4.1.58.Final]
+	at java.lang.Thread.run(Thread.java:832) [?:?]
+2021-04-15 11:41:39,744 ERROR [nioEventLoopGroup-3-8] o.e.s.h.NettyServerHandler.(): [exceptionCaught][连接(69d53ac3) 发生异常]
+java.net.SocketException: Connection reset
+	at sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:345) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:376) ~[?:?]
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:253) ~[netty-all-4.1.58.Final.jar:4.1.58.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1134) ~[netty-all-4.1.58.Final.jar:4.1.58.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350) ~[netty-all-4.1.58.Final.jar:4.1.58.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151) [netty-all-4.1.58.Final.jar:4.1.58.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:719) [netty-all-4.1.58.Final.jar:4.1.58.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:655) [netty-all-4.1.58.Final.jar:4.1.58.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:581) [netty-all-4.1.58.Final.jar:4.1.58.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493) [netty-all-4.1.58.Final.jar:4.1.58.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989) [netty-all-4.1.58.Final.jar:4.1.58.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) [netty-all-4.1.58.Final.jar:4.1.58.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) [netty-all-4.1.58.Final.jar:4.1.58.Final]
+	at java.lang.Thread.run(Thread.java:832) [?:?]
+2021-04-15 11:48:20,536 ERROR [nioEventLoopGroup-2-1] o.e.c.h.NettyClientHandler.(): [exceptionCaught][连接(59fb8ca6) 发生异常]
+io.netty.handler.timeout.ReadTimeoutException: null
+2021-04-15 11:49:38,152 ERROR [XNIO-1 task-1] i.u.request.(): UT005023: Exception handling request to /test2
+org.springframework.web.util.NestedServletException: Request processing failed; nested exception is org.springframework.http.converter.HttpMessageConversionException: Type definition error: [simple type, class org.example.codec.Invocation]; nested exception is com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Cannot construct instance of `org.example.codec.Invocation` (no Creators, like default constructor, exist): cannot deserialize from Object value (no delegate- or property-based Creator)
+ at [Source: (PushbackInputStream); line: 2, column: 3]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-5.3.3.jar:5.3.3]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) ~[spring-webmvc-5.3.3.jar:5.3.3]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:517) ~[jakarta.servlet-api-4.0.4.jar:4.0.4]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.3.jar:5.3.3]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:584) ~[jakarta.servlet-api-4.0.4.jar:4.0.4]
+	at io.undertow.servlet.handlers.ServletHandler.handleRequest(ServletHandler.java:74) ~[undertow-servlet-2.2.3.Final.jar:2.2.3.Final]
+	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:129) ~[undertow-servlet-2.2.3.Final.jar:2.2.3.Final]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.3.jar:5.3.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.3.jar:5.3.3]
+	at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:61) ~[undertow-servlet-2.2.3.Final.jar:2.2.3.Final]
+	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131) ~[undertow-servlet-2.2.3.Final.jar:2.2.3.Final]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.3.jar:5.3.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.3.jar:5.3.3]
+	at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:61) ~[undertow-servlet-2.2.3.Final.jar:2.2.3.Final]
+	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131) ~[undertow-servlet-2.2.3.Final.jar:2.2.3.Final]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.3.jar:5.3.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.3.jar:5.3.3]
+	at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:61) ~[undertow-servlet-2.2.3.Final.jar:2.2.3.Final]
+	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131) ~[undertow-servlet-2.2.3.Final.jar:2.2.3.Final]
+	at io.undertow.servlet.handlers.FilterHandler.handleRequest(FilterHandler.java:84) ~[undertow-servlet-2.2.3.Final.jar:2.2.3.Final]
+	at io.undertow.servlet.handlers.security.ServletSecurityRoleHandler.handleRequest(ServletSecurityRoleHandler.java:62) ~[undertow-servlet-2.2.3.Final.jar:2.2.3.Final]
+	at io.undertow.servlet.handlers.ServletChain$1.handleRequest(ServletChain.java:68) ~[undertow-servlet-2.2.3.Final.jar:2.2.3.Final]
+	at io.undertow.servlet.handlers.ServletDispatchingHandler.handleRequest(ServletDispatchingHandler.java:36) ~[undertow-servlet-2.2.3.Final.jar:2.2.3.Final]
+	at io.undertow.servlet.handlers.RedirectDirHandler.handleRequest(RedirectDirHandler.java:68) ~[undertow-servlet-2.2.3.Final.jar:2.2.3.Final]
+	at io.undertow.servlet.handlers.security.SSLInformationAssociationHandler.handleRequest(SSLInformationAssociationHandler.java:117) ~[undertow-servlet-2.2.3.Final.jar:2.2.3.Final]
+	at io.undertow.servlet.handlers.security.ServletAuthenticationCallHandler.handleRequest(ServletAuthenticationCallHandler.java:57) ~[undertow-servlet-2.2.3.Final.jar:2.2.3.Final]
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43) ~[undertow-core-2.2.3.Final.jar:2.2.3.Final]
+	at io.undertow.security.handlers.AbstractConfidentialityHandler.handleRequest(AbstractConfidentialityHandler.java:46) ~[undertow-core-2.2.3.Final.jar:2.2.3.Final]
+	at io.undertow.servlet.handlers.security.ServletConfidentialityConstraintHandler.handleRequest(ServletConfidentialityConstraintHandler.java:64) ~[undertow-servlet-2.2.3.Final.jar:2.2.3.Final]
+	at io.undertow.security.handlers.AuthenticationMechanismsHandler.handleRequest(AuthenticationMechanismsHandler.java:60) ~[undertow-core-2.2.3.Final.jar:2.2.3.Final]
+	at io.undertow.servlet.handlers.security.CachedAuthenticatedSessionHandler.handleRequest(CachedAuthenticatedSessionHandler.java:77) ~[undertow-servlet-2.2.3.Final.jar:2.2.3.Final]
+	at io.undertow.security.handlers.AbstractSecurityContextAssociationHandler.handleRequest(AbstractSecurityContextAssociationHandler.java:43) ~[undertow-core-2.2.3.Final.jar:2.2.3.Final]
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43) ~[undertow-core-2.2.3.Final.jar:2.2.3.Final]
+	at io.undertow.servlet.handlers.SendErrorPageHandler.handleRequest(SendErrorPageHandler.java:52) ~[undertow-servlet-2.2.3.Final.jar:2.2.3.Final]
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43) ~[undertow-core-2.2.3.Final.jar:2.2.3.Final]
+	at io.undertow.servlet.handlers.ServletInitialHandler.handleFirstRequest(ServletInitialHandler.java:269) [undertow-servlet-2.2.3.Final.jar:2.2.3.Final]
+	at io.undertow.servlet.handlers.ServletInitialHandler.access$100(ServletInitialHandler.java:78) [undertow-servlet-2.2.3.Final.jar:2.2.3.Final]
+	at io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:133) [undertow-servlet-2.2.3.Final.jar:2.2.3.Final]
+	at io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:130) [undertow-servlet-2.2.3.Final.jar:2.2.3.Final]
+	at io.undertow.servlet.core.ServletRequestContextThreadSetupAction$1.call(ServletRequestContextThreadSetupAction.java:48) [undertow-servlet-2.2.3.Final.jar:2.2.3.Final]
+	at io.undertow.servlet.core.ContextClassLoaderSetupAction$1.call(ContextClassLoaderSetupAction.java:43) [undertow-servlet-2.2.3.Final.jar:2.2.3.Final]
+	at io.undertow.servlet.handlers.ServletInitialHandler.dispatchRequest(ServletInitialHandler.java:249) [undertow-servlet-2.2.3.Final.jar:2.2.3.Final]
+	at io.undertow.servlet.handlers.ServletInitialHandler.access$000(ServletInitialHandler.java:78) [undertow-servlet-2.2.3.Final.jar:2.2.3.Final]
+	at io.undertow.servlet.handlers.ServletInitialHandler$1.handleRequest(ServletInitialHandler.java:99) [undertow-servlet-2.2.3.Final.jar:2.2.3.Final]
+	at io.undertow.server.Connectors.executeRootHandler(Connectors.java:387) [undertow-core-2.2.3.Final.jar:2.2.3.Final]
+	at io.undertow.server.HttpServerExchange$1.run(HttpServerExchange.java:841) [undertow-core-2.2.3.Final.jar:2.2.3.Final]
+	at org.jboss.threads.ContextClassLoaderSavingRunnable.run(ContextClassLoaderSavingRunnable.java:35) [jboss-threads-3.1.0.Final.jar:3.1.0.Final]
+	at org.jboss.threads.EnhancedQueueExecutor.safeRun(EnhancedQueueExecutor.java:2019) [jboss-threads-3.1.0.Final.jar:3.1.0.Final]
+	at org.jboss.threads.EnhancedQueueExecutor$ThreadBody.doRunTask(EnhancedQueueExecutor.java:1558) [jboss-threads-3.1.0.Final.jar:3.1.0.Final]
+	at org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1449) [jboss-threads-3.1.0.Final.jar:3.1.0.Final]
+	at java.lang.Thread.run(Thread.java:832) [?:?]
+Caused by: org.springframework.http.converter.HttpMessageConversionException: Type definition error: [simple type, class org.example.codec.Invocation]; nested exception is com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Cannot construct instance of `org.example.codec.Invocation` (no Creators, like default constructor, exist): cannot deserialize from Object value (no delegate- or property-based Creator)
+ at [Source: (PushbackInputStream); line: 2, column: 3]
+	at org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.readJavaType(AbstractJackson2HttpMessageConverter.java:282) ~[spring-web-5.3.3.jar:5.3.3]
+	at org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.read(AbstractJackson2HttpMessageConverter.java:243) ~[spring-web-5.3.3.jar:5.3.3]
+	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodArgumentResolver.readWithMessageConverters(AbstractMessageConverterMethodArgumentResolver.java:205) ~[spring-webmvc-5.3.3.jar:5.3.3]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.readWithMessageConverters(RequestResponseBodyMethodProcessor.java:158) ~[spring-webmvc-5.3.3.jar:5.3.3]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.resolveArgument(RequestResponseBodyMethodProcessor.java:131) ~[spring-webmvc-5.3.3.jar:5.3.3]
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:121) ~[spring-web-5.3.3.jar:5.3.3]
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:170) ~[spring-web-5.3.3.jar:5.3.3]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:137) ~[spring-web-5.3.3.jar:5.3.3]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106) ~[spring-webmvc-5.3.3.jar:5.3.3]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:894) ~[spring-webmvc-5.3.3.jar:5.3.3]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.3.jar:5.3.3]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.3.jar:5.3.3]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1060) ~[spring-webmvc-5.3.3.jar:5.3.3]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:962) ~[spring-webmvc-5.3.3.jar:5.3.3]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.3.jar:5.3.3]
+	... 50 more
+Caused by: com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Cannot construct instance of `org.example.codec.Invocation` (no Creators, like default constructor, exist): cannot deserialize from Object value (no delegate- or property-based Creator)
+ at [Source: (PushbackInputStream); line: 2, column: 3]
+	at com.fasterxml.jackson.databind.exc.InvalidDefinitionException.from(InvalidDefinitionException.java:67) ~[jackson-databind-2.11.4.jar:2.11.4]
+	at com.fasterxml.jackson.databind.DeserializationContext.reportBadDefinition(DeserializationContext.java:1615) ~[jackson-databind-2.11.4.jar:2.11.4]
+	at com.fasterxml.jackson.databind.DatabindContext.reportBadDefinition(DatabindContext.java:400) ~[jackson-databind-2.11.4.jar:2.11.4]
+	at com.fasterxml.jackson.databind.DeserializationContext.handleMissingInstantiator(DeserializationContext.java:1077) ~[jackson-databind-2.11.4.jar:2.11.4]
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.deserializeFromObjectUsingNonDefault(BeanDeserializerBase.java:1332) ~[jackson-databind-2.11.4.jar:2.11.4]
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserializeFromObject(BeanDeserializer.java:331) ~[jackson-databind-2.11.4.jar:2.11.4]
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:164) ~[jackson-databind-2.11.4.jar:2.11.4]
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4526) ~[jackson-databind-2.11.4.jar:2.11.4]
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3521) ~[jackson-databind-2.11.4.jar:2.11.4]
+	at org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.readJavaType(AbstractJackson2HttpMessageConverter.java:274) ~[spring-web-5.3.3.jar:5.3.3]
+	at org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.read(AbstractJackson2HttpMessageConverter.java:243) ~[spring-web-5.3.3.jar:5.3.3]
+	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodArgumentResolver.readWithMessageConverters(AbstractMessageConverterMethodArgumentResolver.java:205) ~[spring-webmvc-5.3.3.jar:5.3.3]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.readWithMessageConverters(RequestResponseBodyMethodProcessor.java:158) ~[spring-webmvc-5.3.3.jar:5.3.3]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.resolveArgument(RequestResponseBodyMethodProcessor.java:131) ~[spring-webmvc-5.3.3.jar:5.3.3]
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:121) ~[spring-web-5.3.3.jar:5.3.3]
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:170) ~[spring-web-5.3.3.jar:5.3.3]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:137) ~[spring-web-5.3.3.jar:5.3.3]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106) ~[spring-webmvc-5.3.3.jar:5.3.3]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:894) ~[spring-webmvc-5.3.3.jar:5.3.3]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.3.jar:5.3.3]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.3.jar:5.3.3]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1060) ~[spring-webmvc-5.3.3.jar:5.3.3]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:962) ~[spring-webmvc-5.3.3.jar:5.3.3]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.3.jar:5.3.3]
+	... 50 more
+2021-04-15 11:55:48,460 ERROR [nioEventLoopGroup-2-1] o.e.c.h.NettyClientHandler.(): [exceptionCaught][连接(674635fe) 发生异常]
+io.netty.handler.timeout.ReadTimeoutException: null
+2021-04-15 11:56:20,994 ERROR [nioEventLoopGroup-2-1] o.e.c.h.NettyClientHandler.(): [exceptionCaught][连接(aaf97c8c) 发生异常]
+java.net.SocketException: Connection reset
+	at sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:345) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:376) ~[?:?]
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:253) ~[netty-all-4.1.58.Final.jar:4.1.58.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1134) ~[netty-all-4.1.58.Final.jar:4.1.58.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350) ~[netty-all-4.1.58.Final.jar:4.1.58.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151) [netty-all-4.1.58.Final.jar:4.1.58.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:719) [netty-all-4.1.58.Final.jar:4.1.58.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:655) [netty-all-4.1.58.Final.jar:4.1.58.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:581) [netty-all-4.1.58.Final.jar:4.1.58.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493) [netty-all-4.1.58.Final.jar:4.1.58.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989) [netty-all-4.1.58.Final.jar:4.1.58.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) [netty-all-4.1.58.Final.jar:4.1.58.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) [netty-all-4.1.58.Final.jar:4.1.58.Final]
+	at java.lang.Thread.run(Thread.java:832) [?:?]
+2021-04-15 11:56:20,999 ERROR [nioEventLoopGroup-2-3] o.e.c.h.NettyClientHandler.(): [exceptionCaught][连接(33a83e6f) 发生异常]
+java.net.SocketException: Connection reset
+	at sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:345) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:376) ~[?:?]
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:253) ~[netty-all-4.1.58.Final.jar:4.1.58.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1134) ~[netty-all-4.1.58.Final.jar:4.1.58.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350) ~[netty-all-4.1.58.Final.jar:4.1.58.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151) [netty-all-4.1.58.Final.jar:4.1.58.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:719) [netty-all-4.1.58.Final.jar:4.1.58.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:655) [netty-all-4.1.58.Final.jar:4.1.58.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:581) [netty-all-4.1.58.Final.jar:4.1.58.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493) [netty-all-4.1.58.Final.jar:4.1.58.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989) [netty-all-4.1.58.Final.jar:4.1.58.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) [netty-all-4.1.58.Final.jar:4.1.58.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) [netty-all-4.1.58.Final.jar:4.1.58.Final]
+	at java.lang.Thread.run(Thread.java:832) [?:?]
+2021-04-15 11:59:41,028 ERROR [nioEventLoopGroup-2-5] o.e.c.h.NettyClientHandler.(): [exceptionCaught][连接(c04d9e5a) 发生异常]
+io.netty.handler.timeout.ReadTimeoutException: null
+2021-04-15 11:59:41,029 ERROR [nioEventLoopGroup-2-3] o.e.c.h.NettyClientHandler.(): [exceptionCaught][连接(0a14db2d) 发生异常]
+io.netty.handler.timeout.ReadTimeoutException: null
+2021-04-15 12:03:01,049 ERROR [nioEventLoopGroup-2-5] o.e.c.h.NettyClientHandler.(): [exceptionCaught][连接(9a906195) 发生异常]
+io.netty.handler.timeout.ReadTimeoutException: null
+2021-04-15 12:03:01,049 ERROR [nioEventLoopGroup-2-7] o.e.c.h.NettyClientHandler.(): [exceptionCaught][连接(35ac6812) 发生异常]
+io.netty.handler.timeout.ReadTimeoutException: null
+2021-04-15 12:06:21,075 ERROR [nioEventLoopGroup-2-1] o.e.c.h.NettyClientHandler.(): [exceptionCaught][连接(37453964) 发生异常]
+io.netty.handler.timeout.ReadTimeoutException: null
+2021-04-15 12:06:21,075 ERROR [nioEventLoopGroup-2-7] o.e.c.h.NettyClientHandler.(): [exceptionCaught][连接(281d12fb) 发生异常]
+io.netty.handler.timeout.ReadTimeoutException: null
+2021-04-15 12:09:41,098 ERROR [nioEventLoopGroup-2-3] o.e.c.h.NettyClientHandler.(): [exceptionCaught][连接(ef92ee67) 发生异常]
+io.netty.handler.timeout.ReadTimeoutException: null
+2021-04-15 12:09:41,098 ERROR [nioEventLoopGroup-2-1] o.e.c.h.NettyClientHandler.(): [exceptionCaught][连接(98ca260e) 发生异常]
+io.netty.handler.timeout.ReadTimeoutException: null
+2021-04-15 12:13:01,104 ERROR [nioEventLoopGroup-2-5] o.e.c.h.NettyClientHandler.(): [exceptionCaught][连接(2000c7a9) 发生异常]
+io.netty.handler.timeout.ReadTimeoutException: null
+2021-04-15 12:13:01,119 ERROR [nioEventLoopGroup-2-3] o.e.c.h.NettyClientHandler.(): [exceptionCaught][连接(77a7623a) 发生异常]
+io.netty.handler.timeout.ReadTimeoutException: null
+2021-04-15 12:16:21,126 ERROR [nioEventLoopGroup-2-7] o.e.c.h.NettyClientHandler.(): [exceptionCaught][连接(d8a3ee11) 发生异常]
+io.netty.handler.timeout.ReadTimeoutException: null
+2021-04-15 12:16:21,142 ERROR [nioEventLoopGroup-2-5] o.e.c.h.NettyClientHandler.(): [exceptionCaught][连接(16633f07) 发生异常]
+io.netty.handler.timeout.ReadTimeoutException: null
+2021-04-15 12:19:41,158 ERROR [nioEventLoopGroup-2-1] o.e.c.h.NettyClientHandler.(): [exceptionCaught][连接(821e96b4) 发生异常]
+io.netty.handler.timeout.ReadTimeoutException: null
+2021-04-15 12:19:41,174 ERROR [nioEventLoopGroup-2-7] o.e.c.h.NettyClientHandler.(): [exceptionCaught][连接(f501fb5b) 发生异常]
+io.netty.handler.timeout.ReadTimeoutException: null
+2021-04-15 12:23:01,182 ERROR [nioEventLoopGroup-2-3] o.e.c.h.NettyClientHandler.(): [exceptionCaught][连接(0146696c) 发生异常]
+io.netty.handler.timeout.ReadTimeoutException: null
+2021-04-15 12:23:01,199 ERROR [nioEventLoopGroup-2-1] o.e.c.h.NettyClientHandler.(): [exceptionCaught][连接(98c9b446) 发生异常]
+io.netty.handler.timeout.ReadTimeoutException: null
+2021-04-15 12:26:21,206 ERROR [nioEventLoopGroup-2-5] o.e.c.h.NettyClientHandler.(): [exceptionCaught][连接(31aa6c61) 发生异常]
+io.netty.handler.timeout.ReadTimeoutException: null
+2021-04-15 12:26:21,222 ERROR [nioEventLoopGroup-2-3] o.e.c.h.NettyClientHandler.(): [exceptionCaught][连接(358cd8b1) 发生异常]
+io.netty.handler.timeout.ReadTimeoutException: null
+2021-04-15 12:29:41,232 ERROR [nioEventLoopGroup-2-7] o.e.c.h.NettyClientHandler.(): [exceptionCaught][连接(390b177a) 发生异常]
+io.netty.handler.timeout.ReadTimeoutException: null
+2021-04-15 12:29:41,232 ERROR [nioEventLoopGroup-2-5] o.e.c.h.NettyClientHandler.(): [exceptionCaught][连接(e3454d1b) 发生异常]
+io.netty.handler.timeout.ReadTimeoutException: null
+2021-04-15 12:33:01,251 ERROR [nioEventLoopGroup-2-1] o.e.c.h.NettyClientHandler.(): [exceptionCaught][连接(22dc60be) 发生异常]
+io.netty.handler.timeout.ReadTimeoutException: null
+2021-04-15 12:33:01,251 ERROR [nioEventLoopGroup-2-7] o.e.c.h.NettyClientHandler.(): [exceptionCaught][连接(203ec526) 发生异常]
+io.netty.handler.timeout.ReadTimeoutException: null
+2021-04-15 12:36:21,263 ERROR [nioEventLoopGroup-2-1] o.e.c.h.NettyClientHandler.(): [exceptionCaught][连接(d1c49441) 发生异常]
+io.netty.handler.timeout.ReadTimeoutException: null
+2021-04-15 12:36:21,263 ERROR [nioEventLoopGroup-2-3] o.e.c.h.NettyClientHandler.(): [exceptionCaught][连接(421f04fb) 发生异常]
+io.netty.handler.timeout.ReadTimeoutException: null
+2021-04-15 12:39:41,292 ERROR [nioEventLoopGroup-2-3] o.e.c.h.NettyClientHandler.(): [exceptionCaught][连接(80179a50) 发生异常]
+io.netty.handler.timeout.ReadTimeoutException: null
+2021-04-15 12:39:41,292 ERROR [nioEventLoopGroup-2-5] o.e.c.h.NettyClientHandler.(): [exceptionCaught][连接(ffa13cdb) 发生异常]
+io.netty.handler.timeout.ReadTimeoutException: null
+2021-04-15 12:43:01,317 ERROR [nioEventLoopGroup-2-7] o.e.c.h.NettyClientHandler.(): [exceptionCaught][连接(b891bc83) 发生异常]
+io.netty.handler.timeout.ReadTimeoutException: null
+2021-04-15 12:43:01,317 ERROR [nioEventLoopGroup-2-5] o.e.c.h.NettyClientHandler.(): [exceptionCaught][连接(97e93994) 发生异常]
+io.netty.handler.timeout.ReadTimeoutException: null
+2021-04-15 12:46:21,325 ERROR [nioEventLoopGroup-2-1] o.e.c.h.NettyClientHandler.(): [exceptionCaught][连接(569ab8af) 发生异常]
+io.netty.handler.timeout.ReadTimeoutException: null
+2021-04-15 12:46:21,325 ERROR [nioEventLoopGroup-2-7] o.e.c.h.NettyClientHandler.(): [exceptionCaught][连接(0de598cc) 发生异常]
+io.netty.handler.timeout.ReadTimeoutException: null
+2021-04-15 12:49:41,353 ERROR [nioEventLoopGroup-2-3] o.e.c.h.NettyClientHandler.(): [exceptionCaught][连接(12e8a1da) 发生异常]
+io.netty.handler.timeout.ReadTimeoutException: null
+2021-04-15 12:49:41,353 ERROR [nioEventLoopGroup-2-1] o.e.c.h.NettyClientHandler.(): [exceptionCaught][连接(28386639) 发生异常]
+io.netty.handler.timeout.ReadTimeoutException: null
+2021-04-15 12:53:01,372 ERROR [nioEventLoopGroup-2-3] o.e.c.h.NettyClientHandler.(): [exceptionCaught][连接(d091a874) 发生异常]
+io.netty.handler.timeout.ReadTimeoutException: null
+2021-04-15 12:53:01,372 ERROR [nioEventLoopGroup-2-5] o.e.c.h.NettyClientHandler.(): [exceptionCaught][连接(413904ac) 发生异常]
+io.netty.handler.timeout.ReadTimeoutException: null
+2021-04-15 12:56:21,392 ERROR [nioEventLoopGroup-2-5] o.e.c.h.NettyClientHandler.(): [exceptionCaught][连接(04332f89) 发生异常]
+io.netty.handler.timeout.ReadTimeoutException: null
+2021-04-15 12:56:21,392 ERROR [nioEventLoopGroup-2-7] o.e.c.h.NettyClientHandler.(): [exceptionCaught][连接(a154debd) 发生异常]
+io.netty.handler.timeout.ReadTimeoutException: null
+2021-04-15 12:59:41,407 ERROR [nioEventLoopGroup-2-7] o.e.c.h.NettyClientHandler.(): [exceptionCaught][连接(9a391831) 发生异常]
+io.netty.handler.timeout.ReadTimeoutException: null
+2021-04-15 12:59:41,407 ERROR [nioEventLoopGroup-2-1] o.e.c.h.NettyClientHandler.(): [exceptionCaught][连接(4b4676e8) 发生异常]
+io.netty.handler.timeout.ReadTimeoutException: null
+2021-04-15 13:03:01,430 ERROR [nioEventLoopGroup-2-1] o.e.c.h.NettyClientHandler.(): [exceptionCaught][连接(431d0f39) 发生异常]
+io.netty.handler.timeout.ReadTimeoutException: null
+2021-04-15 13:03:01,430 ERROR [nioEventLoopGroup-2-3] o.e.c.h.NettyClientHandler.(): [exceptionCaught][连接(c7676a6a) 发生异常]
+io.netty.handler.timeout.ReadTimeoutException: null
+2021-04-15 13:06:21,441 ERROR [nioEventLoopGroup-2-3] o.e.c.h.NettyClientHandler.(): [exceptionCaught][连接(677b6550) 发生异常]
+io.netty.handler.timeout.ReadTimeoutException: null
+2021-04-15 13:06:21,441 ERROR [nioEventLoopGroup-2-5] o.e.c.h.NettyClientHandler.(): [exceptionCaught][连接(de76fb6b) 发生异常]
+io.netty.handler.timeout.ReadTimeoutException: null
+2021-04-15 13:09:41,467 ERROR [nioEventLoopGroup-2-7] o.e.c.h.NettyClientHandler.(): [exceptionCaught][连接(e3c27b25) 发生异常]
+io.netty.handler.timeout.ReadTimeoutException: null
+2021-04-15 13:09:41,467 ERROR [nioEventLoopGroup-2-5] o.e.c.h.NettyClientHandler.(): [exceptionCaught][连接(8eeb9d2e) 发生异常]
+io.netty.handler.timeout.ReadTimeoutException: null
+2021-04-15 13:13:01,493 ERROR [nioEventLoopGroup-2-7] o.e.c.h.NettyClientHandler.(): [exceptionCaught][连接(16b39f1f) 发生异常]
+io.netty.handler.timeout.ReadTimeoutException: null
+2021-04-15 13:13:01,493 ERROR [nioEventLoopGroup-2-1] o.e.c.h.NettyClientHandler.(): [exceptionCaught][连接(68d37273) 发生异常]
+io.netty.handler.timeout.ReadTimeoutException: null
+2021-04-15 13:16:21,526 ERROR [nioEventLoopGroup-2-3] o.e.c.h.NettyClientHandler.(): [exceptionCaught][连接(ce45c33d) 发生异常]
+io.netty.handler.timeout.ReadTimeoutException: null
+2021-04-15 13:16:21,526 ERROR [nioEventLoopGroup-2-1] o.e.c.h.NettyClientHandler.(): [exceptionCaught][连接(87e6c095) 发生异常]
+io.netty.handler.timeout.ReadTimeoutException: null
+2021-04-15 13:19:41,559 ERROR [nioEventLoopGroup-2-5] o.e.c.h.NettyClientHandler.(): [exceptionCaught][连接(02c179d4) 发生异常]
+io.netty.handler.timeout.ReadTimeoutException: null
+2021-04-15 13:19:41,559 ERROR [nioEventLoopGroup-2-3] o.e.c.h.NettyClientHandler.(): [exceptionCaught][连接(a8e6bb31) 发生异常]
+io.netty.handler.timeout.ReadTimeoutException: null
+2021-04-15 13:23:01,583 ERROR [nioEventLoopGroup-2-5] o.e.c.h.NettyClientHandler.(): [exceptionCaught][连接(8c6a4c24) 发生异常]
+io.netty.handler.timeout.ReadTimeoutException: null
+2021-04-15 13:23:01,583 ERROR [nioEventLoopGroup-2-7] o.e.c.h.NettyClientHandler.(): [exceptionCaught][连接(021a7b01) 发生异常]
+io.netty.handler.timeout.ReadTimeoutException: null
+2021-04-15 13:26:21,607 ERROR [nioEventLoopGroup-2-7] o.e.c.h.NettyClientHandler.(): [exceptionCaught][连接(4f219492) 发生异常]
+io.netty.handler.timeout.ReadTimeoutException: null
+2021-04-15 13:26:21,607 ERROR [nioEventLoopGroup-2-1] o.e.c.h.NettyClientHandler.(): [exceptionCaught][连接(54d58ddf) 发生异常]
+io.netty.handler.timeout.ReadTimeoutException: null
+2021-04-15 13:29:41,634 ERROR [nioEventLoopGroup-2-1] o.e.c.h.NettyClientHandler.(): [exceptionCaught][连接(bdb98bb6) 发生异常]
+io.netty.handler.timeout.ReadTimeoutException: null
+2021-04-15 13:29:41,634 ERROR [nioEventLoopGroup-2-3] o.e.c.h.NettyClientHandler.(): [exceptionCaught][连接(eb21d63d) 发生异常]
+io.netty.handler.timeout.ReadTimeoutException: null
+2021-04-15 13:33:01,654 ERROR [nioEventLoopGroup-2-5] o.e.c.h.NettyClientHandler.(): [exceptionCaught][连接(a41e2d45) 发生异常]
+io.netty.handler.timeout.ReadTimeoutException: null
+2021-04-15 13:33:01,654 ERROR [nioEventLoopGroup-2-3] o.e.c.h.NettyClientHandler.(): [exceptionCaught][连接(45e71e3c) 发生异常]
+io.netty.handler.timeout.ReadTimeoutException: null
+2021-04-15 13:36:21,682 ERROR [nioEventLoopGroup-2-7] o.e.c.h.NettyClientHandler.(): [exceptionCaught][连接(66a4958e) 发生异常]
+io.netty.handler.timeout.ReadTimeoutException: null
+2021-04-15 13:36:21,682 ERROR [nioEventLoopGroup-2-5] o.e.c.h.NettyClientHandler.(): [exceptionCaught][连接(71b1bde7) 发生异常]
+io.netty.handler.timeout.ReadTimeoutException: null
+2021-04-15 13:39:35,423 ERROR [nioEventLoopGroup-2-3] o.e.c.NettyClient.(): [start][Netty Client 连接服务器(127.0.0.1:8888) 失败]
+2021-04-15 13:39:35,439 ERROR [nioEventLoopGroup-2-1] o.e.c.NettyClient.(): [start][Netty Client 连接服务器(127.0.0.1:8888) 失败]
+2021-04-15 13:42:42,775 ERROR [nioEventLoopGroup-2-5] o.e.c.h.NettyClientHandler.(): [exceptionCaught][连接(9582db99) 发生异常]
+java.net.SocketException: Connection reset
+	at sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:345) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:376) ~[?:?]
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:253) ~[netty-all-4.1.58.Final.jar:4.1.58.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1134) ~[netty-all-4.1.58.Final.jar:4.1.58.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350) ~[netty-all-4.1.58.Final.jar:4.1.58.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151) [netty-all-4.1.58.Final.jar:4.1.58.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:719) [netty-all-4.1.58.Final.jar:4.1.58.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:655) [netty-all-4.1.58.Final.jar:4.1.58.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:581) [netty-all-4.1.58.Final.jar:4.1.58.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493) [netty-all-4.1.58.Final.jar:4.1.58.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989) [netty-all-4.1.58.Final.jar:4.1.58.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) [netty-all-4.1.58.Final.jar:4.1.58.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) [netty-all-4.1.58.Final.jar:4.1.58.Final]
+	at java.lang.Thread.run(Thread.java:832) [?:?]
+2021-04-15 13:42:42,775 ERROR [nioEventLoopGroup-2-3] o.e.c.h.NettyClientHandler.(): [exceptionCaught][连接(0c6d8afe) 发生异常]
+java.net.SocketException: Connection reset
+	at sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:345) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:376) ~[?:?]
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:253) ~[netty-all-4.1.58.Final.jar:4.1.58.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1134) ~[netty-all-4.1.58.Final.jar:4.1.58.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350) ~[netty-all-4.1.58.Final.jar:4.1.58.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151) [netty-all-4.1.58.Final.jar:4.1.58.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:719) [netty-all-4.1.58.Final.jar:4.1.58.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:655) [netty-all-4.1.58.Final.jar:4.1.58.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:581) [netty-all-4.1.58.Final.jar:4.1.58.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493) [netty-all-4.1.58.Final.jar:4.1.58.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989) [netty-all-4.1.58.Final.jar:4.1.58.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) [netty-all-4.1.58.Final.jar:4.1.58.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) [netty-all-4.1.58.Final.jar:4.1.58.Final]
+	at java.lang.Thread.run(Thread.java:832) [?:?]
+2021-04-15 13:46:02,800 ERROR [nioEventLoopGroup-2-5] o.e.c.h.NettyClientHandler.(): [exceptionCaught][连接(85219225) 发生异常]
+io.netty.handler.timeout.ReadTimeoutException: null
+2021-04-15 13:46:02,800 ERROR [nioEventLoopGroup-2-7] o.e.c.h.NettyClientHandler.(): [exceptionCaught][连接(4dcdcb55) 发生异常]
+io.netty.handler.timeout.ReadTimeoutException: null
+2021-04-15 13:49:22,821 ERROR [nioEventLoopGroup-2-7] o.e.c.h.NettyClientHandler.(): [exceptionCaught][连接(e9a6e821) 发生异常]
+io.netty.handler.timeout.ReadTimeoutException: null
+2021-04-15 13:49:22,821 ERROR [nioEventLoopGroup-2-1] o.e.c.h.NettyClientHandler.(): [exceptionCaught][连接(2fbcf8f3) 发生异常]
+io.netty.handler.timeout.ReadTimeoutException: null
+2021-04-15 13:52:42,845 ERROR [nioEventLoopGroup-2-1] o.e.c.h.NettyClientHandler.(): [exceptionCaught][连接(cfbc3148) 发生异常]
+io.netty.handler.timeout.ReadTimeoutException: null
+2021-04-15 13:52:42,845 ERROR [nioEventLoopGroup-2-3] o.e.c.h.NettyClientHandler.(): [exceptionCaught][连接(5ab18bf6) 发生异常]
+io.netty.handler.timeout.ReadTimeoutException: null
+2021-04-15 13:56:02,855 ERROR [nioEventLoopGroup-2-5] o.e.c.h.NettyClientHandler.(): [exceptionCaught][连接(338afae3) 发生异常]
+io.netty.handler.timeout.ReadTimeoutException: null
+2021-04-15 13:56:02,855 ERROR [nioEventLoopGroup-2-3] o.e.c.h.NettyClientHandler.(): [exceptionCaught][连接(d6417b2b) 发生异常]
+io.netty.handler.timeout.ReadTimeoutException: null
+2021-04-15 13:56:48,636 ERROR [nioEventLoopGroup-2-1] o.e.c.NettyClient.(): [start][Netty Client 连接服务器(127.0.0.1:8888) 失败]
+2021-04-15 13:56:48,636 ERROR [nioEventLoopGroup-2-7] o.e.c.NettyClient.(): [start][Netty Client 连接服务器(127.0.0.1:8888) 失败]
+2021-04-15 14:00:08,655 ERROR [nioEventLoopGroup-2-1] o.e.c.h.NettyClientHandler.(): [exceptionCaught][连接(2c4b8f84) 发生异常]
+io.netty.handler.timeout.ReadTimeoutException: null
+2021-04-15 14:00:08,655 ERROR [nioEventLoopGroup-2-3] o.e.c.h.NettyClientHandler.(): [exceptionCaught][连接(f7c52373) 发生异常]
+io.netty.handler.timeout.ReadTimeoutException: null
+2021-04-15 14:03:28,680 ERROR [nioEventLoopGroup-2-3] o.e.c.h.NettyClientHandler.(): [exceptionCaught][连接(b75849bc) 发生异常]
+io.netty.handler.timeout.ReadTimeoutException: null
+2021-04-15 14:03:28,680 ERROR [nioEventLoopGroup-2-5] o.e.c.h.NettyClientHandler.(): [exceptionCaught][连接(aaaed9e0) 发生异常]
+io.netty.handler.timeout.ReadTimeoutException: null
+2021-04-15 14:09:18,079 ERROR [nioEventLoopGroup-2-7] o.e.c.h.NettyClientHandler.(): [exceptionCaught][连接(cffe2d9f) 发生异常]
+io.netty.handler.timeout.ReadTimeoutException: null
+2021-04-15 14:09:18,079 ERROR [nioEventLoopGroup-2-1] o.e.c.h.NettyClientHandler.(): [exceptionCaught][连接(61b14bc3) 发生异常]
+io.netty.handler.timeout.ReadTimeoutException: null
+2021-04-15 14:12:38,088 ERROR [nioEventLoopGroup-2-1] o.e.c.h.NettyClientHandler.(): [exceptionCaught][连接(9cc083ce) 发生异常]
+io.netty.handler.timeout.ReadTimeoutException: null
+2021-04-15 14:12:38,088 ERROR [nioEventLoopGroup-2-3] o.e.c.h.NettyClientHandler.(): [exceptionCaught][连接(71e05103) 发生异常]
+io.netty.handler.timeout.ReadTimeoutException: null
+2021-04-15 14:15:58,106 ERROR [nioEventLoopGroup-2-5] o.e.c.h.NettyClientHandler.(): [exceptionCaught][连接(0fb0645a) 发生异常]
+io.netty.handler.timeout.ReadTimeoutException: null
+2021-04-15 14:15:58,106 ERROR [nioEventLoopGroup-2-3] o.e.c.h.NettyClientHandler.(): [exceptionCaught][连接(13de79ff) 发生异常]
+io.netty.handler.timeout.ReadTimeoutException: null
+2021-04-15 14:21:06,907 ERROR [nioEventLoopGroup-2-1] o.e.c.NettyClient.(): [start][Netty Client 连接服务器(127.0.0.1:8888) 失败]
+2021-04-15 14:21:28,954 ERROR [nioEventLoopGroup-2-3] o.e.c.NettyClient.(): [start][Netty Client 连接服务器(127.0.0.1:8888) 失败]
+2021-04-15 14:21:29,982 ERROR [nioEventLoopGroup-2-1] o.e.c.NettyClient.(): [start][Netty Client 连接服务器(127.0.0.1:8888) 失败]
+2021-04-15 14:21:50,992 ERROR [nioEventLoopGroup-2-5] o.e.c.NettyClient.(): [start][Netty Client 连接服务器(127.0.0.1:8888) 失败]
+2021-04-15 14:21:52,012 ERROR [nioEventLoopGroup-2-3] o.e.c.NettyClient.(): [start][Netty Client 连接服务器(127.0.0.1:8888) 失败]
+2021-04-15 14:22:13,026 ERROR [nioEventLoopGroup-2-7] o.e.c.NettyClient.(): [start][Netty Client 连接服务器(127.0.0.1:8888) 失败]
+2021-04-15 14:22:14,045 ERROR [nioEventLoopGroup-2-5] o.e.c.NettyClient.(): [start][Netty Client 连接服务器(127.0.0.1:8888) 失败]
+2021-04-15 14:22:35,047 ERROR [nioEventLoopGroup-2-1] o.e.c.NettyClient.(): [start][Netty Client 连接服务器(127.0.0.1:8888) 失败]
+2021-04-15 14:22:36,086 ERROR [nioEventLoopGroup-2-7] o.e.c.NettyClient.(): [start][Netty Client 连接服务器(127.0.0.1:8888) 失败]
+2021-04-15 14:22:57,067 ERROR [nioEventLoopGroup-2-3] o.e.c.NettyClient.(): [start][Netty Client 连接服务器(127.0.0.1:8888) 失败]
+2021-04-15 14:22:58,121 ERROR [nioEventLoopGroup-2-1] o.e.c.NettyClient.(): [start][Netty Client 连接服务器(127.0.0.1:8888) 失败]
+2021-04-15 14:23:19,097 ERROR [nioEventLoopGroup-2-5] o.e.c.NettyClient.(): [start][Netty Client 连接服务器(127.0.0.1:8888) 失败]
+2021-04-15 14:23:20,133 ERROR [nioEventLoopGroup-2-3] o.e.c.NettyClient.(): [start][Netty Client 连接服务器(127.0.0.1:8888) 失败]
+2021-04-15 14:23:41,133 ERROR [nioEventLoopGroup-2-7] o.e.c.NettyClient.(): [start][Netty Client 连接服务器(127.0.0.1:8888) 失败]
+2021-04-15 14:23:42,164 ERROR [nioEventLoopGroup-2-5] o.e.c.NettyClient.(): [start][Netty Client 连接服务器(127.0.0.1:8888) 失败]

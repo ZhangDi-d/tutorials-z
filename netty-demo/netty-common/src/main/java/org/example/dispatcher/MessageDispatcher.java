@@ -7,7 +7,6 @@ import io.netty.channel.SimpleChannelInboundHandler;
 import org.example.codec.Invocation;
 import org.springframework.beans.factory.annotation.Autowired;
 
-
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
@@ -18,10 +17,9 @@ import java.util.concurrent.Executors;
 @ChannelHandler.Sharable
 public class MessageDispatcher extends SimpleChannelInboundHandler<Invocation> {
 
+    private final ExecutorService executor = Executors.newFixedThreadPool(200);
     @Autowired
     private MessageHandlerContainer messageHandlerContainer;
-
-    private final ExecutorService executor = Executors.newFixedThreadPool(200);
 
     @Override
     protected void channelRead0(ChannelHandlerContext channelHandlerContext, Invocation invocation) throws Exception {

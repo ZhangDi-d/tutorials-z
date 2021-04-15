@@ -25,20 +25,18 @@ import java.net.InetSocketAddress;
 @Component
 public class NettyServer {
 
-    @Value("${netty.port}")
-    private Integer port;
-
-    @Autowired
-    private NettyServerHandlerInitializer nettyServerHandlerInitializer;
-
     /**
      * boss 线程组，用于服务端接受客户端的连接
      */
-    private final EventLoopGroup bossGroup = new NioEventLoopGroup();
+    private EventLoopGroup bossGroup = new NioEventLoopGroup();
     /**
      * worker 线程组，用于服务端接受客户端的数据读写
      */
-    private final EventLoopGroup workerGroup = new NioEventLoopGroup();
+    private EventLoopGroup workerGroup = new NioEventLoopGroup();
+    @Value("${netty.port}")
+    private Integer port;
+    @Autowired
+    private NettyServerHandlerInitializer nettyServerHandlerInitializer;
     /**
      * Netty Server Channel
      */
@@ -51,7 +49,7 @@ public class NettyServer {
     @PostConstruct
     public void start() throws InterruptedException {
         ServerBootstrap serverBootstrap = new ServerBootstrap();
-        serverBootstrap.group(bossGroup,workerGroup)
+        serverBootstrap.group(bossGroup, workerGroup)
                 .channel(NioServerSocketChannel.class)  // 指定 Channel 为服务端 NioServerSocketChannel
                 .localAddress(new InetSocketAddress(port)) // 设置 Netty Server 的端口
                 .option(ChannelOption.SO_BACKLOG, 1024) // 服务端 accept 队列的大小

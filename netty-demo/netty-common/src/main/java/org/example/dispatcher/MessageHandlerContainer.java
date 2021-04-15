@@ -1,9 +1,6 @@
 package org.example.dispatcher;
 
 import lombok.extern.log4j.Log4j2;
-import org.example.codec.Invocation;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.aop.framework.AopProxyUtils;
 import org.springframework.beans.factory.InitializingBean;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -29,28 +26,6 @@ public class MessageHandlerContainer implements InitializingBean {
 
     @Autowired
     private ApplicationContext applicationContext;
-
-    @Override
-    public void afterPropertiesSet() throws Exception {
-        // 通过 ApplicationContext 获得所有 MessageHandler Bean
-        applicationContext.getBeansOfType(MessageHandler.class).values() // 获得所有 MessageHandler Bean
-                .forEach(messageHandler -> handlers.put(messageHandler.getType(), messageHandler)); // 添加到 handlers 中
-        log.info("[afterPropertiesSet][消息处理器数量：{}]", handlers.size());
-    }
-
-    /**
-     * 获得类型对应的 MessageHandler
-     *
-     * @param type 类型
-     * @return MessageHandler
-     */
-    MessageHandler getMessageHandler(String type) {
-        MessageHandler handler = handlers.get(type);
-        if (handler == null) {
-            throw new IllegalArgumentException(String.format("类型(%s) 找不到匹配的 MessageHandler 处理器", type));
-        }
-        return handler;
-    }
 
     /**
      * 获得 MessageHandler 处理的消息类
@@ -88,5 +63,27 @@ public class MessageHandlerContainer implements InitializingBean {
             }
         }
         throw new IllegalStateException(String.format("类型(%s) 获得不到消息类型", handler));
+    }
+
+    @Override
+    public void afterPropertiesSet() throws Exception {
+        // 通过 ApplicationContext 获得所有 MessageHandler Bean
+        applicationContext.getBeansOfType(MessageHandler.class).values() // 获得所有 MessageHandler Bean
+                .forEach(messageHandler -> handlers.put(messageHandler.getType(), messageHandler)); // 添加到 handlers 中
+        log.info("[afterPropertiesSet][消息处理器数量：{}]", handlers.size());
+    }
+
+    /**
+     * 获得类型对应的 MessageHandler
+     *
+     * @param type 类型
+     * @return MessageHandler
+     */
+    MessageHandler getMessageHandler(String type) {
+        MessageHandler handler = handlers.get(type);
+        if (handler == null) {
+            throw new IllegalArgumentException(String.format("类型(%s) 找不到匹配的 MessageHandler 处理器", type));
+        }
+        return handler;
     }
 }

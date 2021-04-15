@@ -17,7 +17,7 @@ public enum ErrCode {
     private final String message;
 
     ErrCode(String code, String message) {
-        this.code    = code;
+        this.code = code;
         this.message = message;
     }
 

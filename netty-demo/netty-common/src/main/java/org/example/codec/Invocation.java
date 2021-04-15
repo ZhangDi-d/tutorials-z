@@ -19,6 +19,9 @@ public class Invocation {
      */
     private String message;
 
+    public Invocation() {
+    }
+
     public Invocation(String type, String message) {
         this.type = type;
         this.message = message;

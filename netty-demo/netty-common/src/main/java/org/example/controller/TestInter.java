@@ -9,7 +9,7 @@ import org.example.entity.User;
  */
 public interface TestInter {
 
-    default void addUser(User user){
+    default void addUser(User user) {
         user.getHabits().add("test11");
     }
 }

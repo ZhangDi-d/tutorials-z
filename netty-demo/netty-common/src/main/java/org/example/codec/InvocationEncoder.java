@@ -16,8 +16,8 @@ public class InvocationEncoder extends MessageToByteEncoder<Invocation> {
     @Override
     protected void encode(ChannelHandlerContext channelHandlerContext, Invocation invocation, ByteBuf byteBuf) throws Exception {
         byte[] bytes = JSON.toJSONBytes(invocation);
-        byteBuf.writeBytes(bytes);
         byteBuf.writeInt(bytes.length);
+        byteBuf.writeBytes(bytes);
         log.info("[encode][连接({}) 编码了一条消息({})]", channelHandlerContext.channel().id(), invocation.toString());
     }
 }

@@ -4,54 +4,50 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="249141f7-0f27-400c-af11-139fbcd3cc72" name="默认变更列表" comment="@pathvariable性能问题">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/netty-common/log/debug.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/netty-common/log/debug/DEBUG-2021-04-08_1.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/netty-common/log/error.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/netty-common/log/info.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/netty-common/log/info/INFO-2021-04-08_1.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/netty-common/log/spring-boot-errorLog.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/netty-common/log/spring-boot-infoLog.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/netty-common/src/main/java/org/example/codec/Invocation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/netty-common/src/main/java/org/example/codec/InvocationDecoder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/netty-common/src/main/java/org/example/codec/InvocationEncoder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/netty-common/src/main/java/org/example/dispatcher/Message.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/netty-common/src/main/java/org/example/dispatcher/MessageDispatcher.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/netty-common/src/main/java/org/example/dispatcher/MessageHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/netty-common/src/main/java/org/example/dispatcher/MessageHandlerContainer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/netty-server-demo/src/main/java/org/example/ServerApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/netty-server-demo/src/main/java/org/example/config/ServerConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/netty-server-demo/src/main/java/org/example/message/auth/AuthRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/netty-server-demo/src/main/java/org/example/message/auth/AuthResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/netty-server-demo/src/main/java/org/example/message/chat/ChatRedirectToUserRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/netty-server-demo/src/main/java/org/example/message/chat/ChatSendResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/netty-server-demo/src/main/java/org/example/message/chat/ChatSendToAllRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/netty-server-demo/src/main/java/org/example/message/chat/ChatSendToOneRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/netty-server-demo/src/main/java/org/example/message/heartbeat/HeartbeatRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/netty-server-demo/src/main/java/org/example/message/heartbeat/HeartbeatResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/netty-server-demo/src/main/java/org/example/messagehandler/auth/AuthRequestHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/netty-server-demo/src/main/java/org/example/messagehandler/chat/ChatSendToAllHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/netty-server-demo/src/main/java/org/example/messagehandler/heartbeat/HeartbeatRequestHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/netty-server-demo/src/main/java/org/example/server/NettyChannelManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/netty-server-demo/src/main/java/org/example/server/NettyServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/netty-server-demo/src/main/java/org/example/server/handler/NettyServerHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/netty-server-demo/src/main/java/org/example/server/handler/NettyServerHandlerInitializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/netty-server-demo/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/netty-server-demo/src/main/resources/log4j2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
+    <list default="true" id="249141f7-0f27-400c-af11-139fbcd3cc72" name="默认变更列表" comment="netty 1">
+      <change afterPath="$PROJECT_DIR$/netty-client-demo/src/main/java/org/example/ClientApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/netty-client-demo/src/main/java/org/example/client/NettyClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/netty-client-demo/src/main/java/org/example/client/handler/NettyClientHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/netty-client-demo/src/main/java/org/example/client/handler/NettyClientHandlerInitializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/netty-client-demo/src/main/java/org/example/config/NettyClientConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/netty-client-demo/src/main/java/org/example/controller/TestController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/netty-client-demo/src/main/java/org/example/message/auth/AuthRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/netty-client-demo/src/main/java/org/example/message/auth/AuthResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/netty-client-demo/src/main/java/org/example/message/chat/ChatRedirectToUserRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/netty-client-demo/src/main/java/org/example/message/chat/ChatSendResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/netty-client-demo/src/main/java/org/example/message/chat/ChatSendToAllRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/netty-client-demo/src/main/java/org/example/message/chat/ChatSendToOneRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/netty-client-demo/src/main/java/org/example/message/heartbeat/HeartbeatRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/netty-client-demo/src/main/java/org/example/message/heartbeat/HeartbeatResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/netty-client-demo/src/main/java/org/example/messagehandler/auth/AuthResponseHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/netty-client-demo/src/main/java/org/example/messagehandler/chat/ChatRedirectToUserRequestHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/netty-client-demo/src/main/java/org/example/messagehandler/chat/ChatSendResponseHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/netty-client-demo/src/main/java/org/example/messagehandler/heartbeat/HeartbeatResponseHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/netty-client-demo/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/netty-client-demo/src/main/resources/log4j2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/netty-server-demo/src/main/java/org/example/messagehandler/chat/ChatSendToOneHandler.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../webflux-transactional/.idea/libraries/Maven__junit_junit_4_13_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/netty-client-demo/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/netty-client-demo/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/netty-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/netty-common/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/netty-common/src/main/java/org/example/codec/Invocation.java" beforeDir="false" afterPath="$PROJECT_DIR$/netty-common/src/main/java/org/example/codec/Invocation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/netty-common/src/main/java/org/example/codec/InvocationEncoder.java" beforeDir="false" afterPath="$PROJECT_DIR$/netty-common/src/main/java/org/example/codec/InvocationEncoder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/netty-common/src/main/java/org/example/config/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/netty-common/src/main/java/org/example/config/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/netty-common/src/main/java/org/example/controller/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/netty-common/src/main/java/org/example/controller/TestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/netty-common/src/main/java/org/example/controller/TestInter.java" beforeDir="false" afterPath="$PROJECT_DIR$/netty-common/src/main/java/org/example/controller/TestInter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/netty-common/src/main/java/org/example/dispatcher/MessageDispatcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/netty-common/src/main/java/org/example/dispatcher/MessageDispatcher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/netty-common/src/main/java/org/example/dispatcher/MessageHandlerContainer.java" beforeDir="false" afterPath="$PROJECT_DIR$/netty-common/src/main/java/org/example/dispatcher/MessageHandlerContainer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/netty-common/src/main/java/org/example/enums/ErrCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/netty-common/src/main/java/org/example/enums/ErrCode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/netty-common/src/main/resources/log4j2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/netty-common/src/main/resources/log4j2.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/netty-common/src/test/java/org/example/test/CommonTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/netty-common/src/test/java/org/example/test/CommonTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/netty-server-demo/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/netty-server-demo/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/netty-server-demo/src/main/java/org/example/messagehandler/auth/AuthRequestHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/netty-server-demo/src/main/java/org/example/messagehandler/auth/AuthRequestHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/netty-server-demo/src/main/java/org/example/server/NettyServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/netty-server-demo/src/main/java/org/example/server/NettyServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/netty-server-demo/src/main/java/org/example/server/handler/NettyServerHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/netty-server-demo/src/main/java/org/example/server/handler/NettyServerHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/netty-server-demo/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/netty-server-demo/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/netty-server-demo/src/main/resources/log4j2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/netty-server-demo/src/main/resources/log4j2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../webflux-transactional/.idea/libraries/Maven__junit_junit_4_12.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../webflux-transactional/webflux-transactional.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../webflux-transactional/webflux-transactional.iml" afterDir="false" />
     </list>
@@ -126,6 +122,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="ExpandSpringBootJavaOptionsPanel" value="true" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
@@ -134,7 +131,8 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/netty-client-demo/src/main/java/org/example/client" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="模块" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -142,21 +140,319 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Work\Learn\github\zd\tutorials-z\netty-demo\netty-client-demo\src\main\java\org\example\client" />
+      <recent name="D:\Work\Learn\github\zd\tutorials-z\netty-demo\netty-client-demo\src\main\java\org\example\messagehandler" />
+      <recent name="D:\Work\Learn\github\zd\tutorials-z\netty-demo\netty-client-demo\src\main\java\org\example\message" />
+      <recent name="D:\Work\Learn\github\zd\tutorials-z\netty-demo\netty-client-demo\src\main\resources" />
       <recent name="D:\Work\Learn\github\zd\tutorials-z\netty-demo" />
-      <recent name="D:\Work\Learn\github\zd\tutorials-z\netty-demo\netty-server-demo\src\main\resources" />
-      <recent name="D:\Work\Learn\github\zd\tutorials-z\netty-demo\netty-server-demo\src\main\java\org\example\server" />
-      <recent name="D:\Work\Learn\github\zd\tutorials-z\netty-demo\netty-server-demo\src\main\java\org\example\messagehandler" />
-      <recent name="D:\Work\Learn\github\zd\tutorials-z\netty-demo\netty-server-demo\src\main\java\org\example\message" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.example.controller" />
+      <recent name="org.example.config" />
       <recent name="org.example.messagehandler.heartbeat" />
       <recent name="org.example.server" />
       <recent name="org.example.dispatcher" />
-      <recent name="org.example.enums" />
-      <recent name="org.example.entity" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.ServerApplication">
+  <component name="RestClientSettings">
+    <option name="REQUEST_HISTORY">
+      <list>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8083/test2" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json; charset=UTF-8" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;type&quot;: &quot;CHAT_SEND_TO_ALL_REQUEST&quot;,&#10;  &quot;message&quot;: &quot;{\&quot;msgId\&quot;:\&quot;1\&quot;,\&quot;content\&quot;:\&quot;haha\&quot;}&quot;&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8083/test2" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json; charset=UTF-8" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;type&quot;: &quot;CHAT_SEND_TO_ONE_REQUEST&quot;,&#10;  &quot;message&quot;: &quot;{\&quot;toUser\&quot;:\&quot;zhangsan\&quot;,\&quot;msgId\&quot;:\&quot;1\&quot;,\&quot;content\&quot;:\&quot;haha\&quot;}&quot;&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8083/test2" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json; charset=UTF-8" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;type&quot;: &quot;AUTH_REQUEST&quot;,&#10;  &quot;message&quot;: &quot;{\&quot;accessToken\&quot;:\&quot;lisi\&quot;}&quot;&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8082/test2" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json; charset=UTF-8" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;type&quot;: &quot;AUTH_REQUEST&quot;,&#10;  &quot;message&quot;: &quot;{\&quot;accessToken\&quot;:\&quot;zhangsan\&quot;}&quot;&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8082/test2" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json; charset=UTF-8" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;type&quot;: &quot;AUTH_REQUEST&quot;,&#10;  &quot;message&quot;: &quot;{\&quot;accessToken\&quot;:\&quot;lisi\&quot;}&quot;&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8082/test1" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json; charset=UTF-8" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;type&quot;: &quot;AUTH_REQUEST&quot;,&#10;  &quot;message&quot;: &quot;{\&quot;accessToken\&quot;:\&quot;lisi\&quot;}&quot;&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8082/test1" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json; charset=UTF-8" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="type" />
+                <option name="value" value="AUTH_REQUEST" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="message" />
+                <option name="value" value="{\&quot;accessToken\&quot;:\&quot;zhangsan\&quot;}" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8082/test1" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json; charset=UTF-8" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;type&quot;: &quot;AUTH_REQUEST&quot;,&#10;  &quot;message&quot;: &quot;{\&quot;accessToken\&quot;:\&quot;zhangsan\&quot;}&quot;&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8083/test1" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json; charset=UTF-8" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;type&quot;:&quot;AUTH_REQUEST&quot; ,&#10;  &quot;message&quot;: &quot;{\&quot;accessToken\&quot;:\&quot;lisi\&quot;}&quot;&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8082/test1" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json; charset=UTF-8" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;&quot;type&quot;:&quot;AUTH_REQUEST&quot; ,&#10;  &quot;message&quot;: &quot;{\&quot;accessToken\&quot;:\&quot;zhangsan\&quot;}&quot;&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8083/test1" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json; charset=UTF-8" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;type&quot;:&quot;AUTH_REQUEST&quot; ,&#10;  &quot;message&quot;: &quot;{accessToken:\&quot;lisi\&quot;}&quot;&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8082/test1" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json; charset=UTF-8" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;&quot;type&quot;:&quot;AUTH_REQUEST&quot; ,&#10;  &quot;message&quot;: &quot;{accessToken:\&quot;zhangsan\&quot;}&quot;&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8083/test1" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json; charset=UTF-8" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;type&quot;:&quot;CHAT_SEND_TO_ONE_REQUEST&quot; ,&#10;  &quot;message&quot;: &quot;{toUser:\&quot;zhangsan\&quot;,\&quot;msgId\&quot;:\&quot;1\&quot;,\&quot;content\&quot;:\&quot;haha\&quot;}&quot;&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8082/test1" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json; charset=UTF-8" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;type&quot;:&quot;CHAT_SEND_TO_ONE_REQUEST&quot; ,&#10;  &quot;message&quot;: &quot;{toUser:\&quot;zhangsan\&quot;,\&quot;msgId\&quot;:\&quot;1\&quot;,\&quot;content\&quot;:\&quot;haha\&quot;}&quot;&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="HTTP 请求.generated-requests#34">
     <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -170,69 +466,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CommonTest.test10" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="netty-common" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.example.test" />
-      <option name="MAIN_CLASS_NAME" value="org.example.test.CommonTest" />
-      <option name="METHOD_NAME" value="test10" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+    <configuration name="generated-requests#31" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="31" runType="运行单个请求">
+      <method v="2" />
     </configuration>
-    <configuration name="CommonTest.test5" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="netty-common" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.example.test" />
-      <option name="MAIN_CLASS_NAME" value="org.example.test.CommonTest" />
-      <option name="METHOD_NAME" value="test5" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+    <configuration name="generated-requests#32" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="32" runType="运行单个请求">
+      <method v="2" />
     </configuration>
-    <configuration name="CommonTest.testClient" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="netty-common" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.example.test" />
-      <option name="MAIN_CLASS_NAME" value="org.example.test.CommonTest" />
-      <option name="METHOD_NAME" value="testClient" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+    <configuration name="generated-requests#33" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="33" runType="运行单个请求">
+      <method v="2" />
     </configuration>
-    <configuration name="CommonTest.testServer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="netty-common" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.example.test" />
-      <option name="MAIN_CLASS_NAME" value="org.example.test.CommonTest" />
-      <option name="METHOD_NAME" value="testServer" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+    <configuration name="generated-requests#34" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="34" runType="运行单个请求">
+      <method v="2" />
     </configuration>
     <configuration name="DemoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="netty-common" />
@@ -254,13 +498,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="HTTP 请求.generated-requests#31" />
+      <item itemvalue="HTTP 请求.generated-requests#32" />
+      <item itemvalue="HTTP 请求.generated-requests#33" />
+      <item itemvalue="Spring Boot.DemoApplication" />
+      <item itemvalue="Spring Boot.ServerApplication" />
+      <item itemvalue="HTTP 请求.generated-requests#34" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="HTTP 请求.generated-requests#34" />
+        <item itemvalue="HTTP 请求.generated-requests#33" />
+        <item itemvalue="HTTP 请求.generated-requests#32" />
+        <item itemvalue="HTTP 请求.generated-requests#31" />
         <item itemvalue="Spring Boot.ServerApplication" />
-        <item itemvalue="JUnit.CommonTest.testServer" />
-        <item itemvalue="JUnit.CommonTest.test10" />
-        <item itemvalue="JUnit.CommonTest.test5" />
-        <item itemvalue="JUnit.CommonTest.testClient" />
       </list>
     </recent_temporary>
   </component>
@@ -277,7 +529,7 @@
       <workItem from="1618194193021" duration="217000" />
       <workItem from="1618194455251" duration="192000" />
       <workItem from="1618194679507" duration="17935000" />
-      <workItem from="1618449821067" duration="4976000" />
+      <workItem from="1618449821067" duration="13371000" />
     </task>
     <task id="LOCAL-00001" summary="@pathvariable性能问题">
       <created>1618222278005</created>
@@ -293,7 +545,14 @@
       <option name="project" value="LOCAL" />
       <updated>1618222344625</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="netty 1">
+      <created>1618454926590</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1618454926590</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -313,7 +572,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="@pathvariable性能问题" />
-    <option name="LAST_COMMIT_MESSAGE" value="@pathvariable性能问题" />
+    <MESSAGE value="netty 1" />
+    <option name="LAST_COMMIT_MESSAGE" value="netty 1" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -343,9 +603,47 @@
           <line>127</line>
           <option name="timeStamp" value="9" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/netty-common/src/main/java/org/example/codec/InvocationEncoder.java</url>
+          <line>17</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/netty-client-demo/src/main/java/org/example/controller/TestController.java</url>
+          <line>18</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/netty-common/src/main/java/org/example/dispatcher/MessageDispatcher.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/netty-common/src/main/java/org/example/dispatcher/MessageHandlerContainer.java</url>
+          <line>37</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/netty-server-demo/src/main/java/org/example/messagehandler/chat/ChatSendToOneHandler.java</url>
+          <line>27</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/netty-common/src/main/java/org/example/codec/InvocationDecoder.java</url>
+          <line>20</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/netty-server-demo/src/main/java/org/example/messagehandler/auth/AuthRequestHandler.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <watches-manager>
+      <configuration name="SpringBootApplicationConfigurationType">
+        <watch expression="bytes.length" language="JAVA" />
+      </configuration>
       <configuration name="Application">
         <watch expression="this.getClass().getClassLoader().getResource(packageName.replaceAll(&quot;\\.&quot;, &quot;/&quot;))" language="JAVA" />
         <watch expression="file.getName().replace(&quot;.class&quot;, &quot;&quot;).trim()" language="JAVA" />

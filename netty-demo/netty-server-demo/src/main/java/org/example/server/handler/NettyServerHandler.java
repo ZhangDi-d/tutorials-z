@@ -3,20 +3,18 @@ package org.example.server.handler;
 import io.netty.channel.ChannelHandler;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.ChannelInboundHandlerAdapter;
+import lombok.extern.log4j.Log4j2;
 import org.example.server.NettyChannelManager;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 /**
  * 服务端 Channel 实现类，提供对客户端 Channel 建立连接、断开连接、异常时的处理
  */
+@Log4j2
 @Component
 @ChannelHandler.Sharable
 public class NettyServerHandler extends ChannelInboundHandlerAdapter {
-
-    private final Logger logger = LoggerFactory.getLogger(getClass());
 
     @Autowired
     private NettyChannelManager channelManager;
@@ -35,7 +33,7 @@ public class NettyServerHandler extends ChannelInboundHandlerAdapter {
 
     @Override
     public void exceptionCaught(ChannelHandlerContext ctx, Throwable cause) {
-        logger.error("[exceptionCaught][连接({}) 发生异常]", ctx.channel().id(), cause);
+        log.error("[exceptionCaught][连接({}) 发生异常]", ctx.channel().id(), cause);
         // 断开连接
         ctx.channel().close();
     }
