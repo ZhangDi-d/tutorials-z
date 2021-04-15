@@ -12,9 +12,11 @@ import io.netty.channel.socket.nio.NioServerSocketChannel;
 import io.netty.channel.socket.nio.NioSocketChannel;
 import io.netty.handler.codec.http.HttpRequestDecoder;
 import io.netty.handler.codec.http.HttpResponseEncoder;
+import io.netty.util.Recycler;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.example.AbstractTest;
+import org.example.entity.User;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -111,10 +113,15 @@ public class CommonTest extends AbstractTest {
                     .childOption(ChannelOption.SO_KEEPALIVE, true);
 
             //3、启动服务器
-
             ChannelFuture f = server.bind(8083).sync();
-            System.out.println("已启动，监听的端口是：" + 8083);
-            f.channel().closeFuture().sync();
+            f.channel().closeFuture().addListener(new ChannelFutureListener() {
+                @Override
+                public void operationComplete(ChannelFuture future) throws Exception {
+                    logger.info("close..");
+                }
+            });
+//            System.out.println("已启动，监听的端口是：" + 8083);
+//            f.channel().closeFuture().sync();
         }catch (Exception e){
             e.printStackTrace();
         }finally {
@@ -222,6 +229,12 @@ public class CommonTest extends AbstractTest {
             e.printStackTrace();
         }
         return result;
+    }
+
+
+    @Test
+    void test11(){
+
     }
 }
 
