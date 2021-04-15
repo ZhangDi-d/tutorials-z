@@ -30,11 +30,11 @@ public class RestfulRequestMappingHandlerMapping extends RequestMappingHandlerMa
         return handlerMethod;
     }
 
-    //自己的查找逻辑，根据从请求头中获取服务名servicename，进行匹配查找
+    //自己的查找逻辑，根据从请求头中获取服务名service-name，进行匹配查找
     private HandlerMethod lookupHandlerMethodHere(String lookupPath, HttpServletRequest request) {
-        String servicename = request.getHeader("servicename");
-        if (!StringUtils.isEmpty(servicename)) {
-            List<HandlerMethod> methodList = this.getHandlerMethodsForMappingName(servicename);
+        String serviceName = request.getHeader("service_name");
+        if (!StringUtils.isEmpty(serviceName)) {
+            List<HandlerMethod> methodList = this.getHandlerMethodsForMappingName(serviceName);
             if (!CollectionUtils.isEmpty(methodList) && methodList.size() > 0) {
                 HandlerMethod handlerMethod = methodList.get(0);
                 RequestMappingInfo requestMappingInfo = mappingLookup.get(handlerMethod);

@@ -5,51 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="249141f7-0f27-400c-af11-139fbcd3cc72" name="默认变更列表" comment="netty 1">
-      <change afterPath="$PROJECT_DIR$/netty-client-demo/src/main/java/org/example/ClientApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/netty-client-demo/src/main/java/org/example/client/NettyClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/netty-client-demo/src/main/java/org/example/client/handler/NettyClientHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/netty-client-demo/src/main/java/org/example/client/handler/NettyClientHandlerInitializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/netty-client-demo/src/main/java/org/example/config/NettyClientConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/netty-client-demo/src/main/java/org/example/controller/TestController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/netty-client-demo/src/main/java/org/example/message/auth/AuthRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/netty-client-demo/src/main/java/org/example/message/auth/AuthResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/netty-client-demo/src/main/java/org/example/message/chat/ChatRedirectToUserRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/netty-client-demo/src/main/java/org/example/message/chat/ChatSendResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/netty-client-demo/src/main/java/org/example/message/chat/ChatSendToAllRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/netty-client-demo/src/main/java/org/example/message/chat/ChatSendToOneRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/netty-client-demo/src/main/java/org/example/message/heartbeat/HeartbeatRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/netty-client-demo/src/main/java/org/example/message/heartbeat/HeartbeatResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/netty-client-demo/src/main/java/org/example/messagehandler/auth/AuthResponseHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/netty-client-demo/src/main/java/org/example/messagehandler/chat/ChatRedirectToUserRequestHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/netty-client-demo/src/main/java/org/example/messagehandler/chat/ChatSendResponseHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/netty-client-demo/src/main/java/org/example/messagehandler/heartbeat/HeartbeatResponseHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/netty-client-demo/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/netty-client-demo/src/main/resources/log4j2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/netty-server-demo/src/main/java/org/example/messagehandler/chat/ChatSendToOneHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../webflux-transactional/.idea/libraries/Maven__junit_junit_4_13_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/netty-common/src/main/java/org/example/config/WebConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/netty-client-demo/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/netty-client-demo/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/netty-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/netty-common/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/netty-common/src/main/java/org/example/codec/Invocation.java" beforeDir="false" afterPath="$PROJECT_DIR$/netty-common/src/main/java/org/example/codec/Invocation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/netty-common/src/main/java/org/example/codec/InvocationEncoder.java" beforeDir="false" afterPath="$PROJECT_DIR$/netty-common/src/main/java/org/example/codec/InvocationEncoder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/netty-common/src/main/java/org/example/config/RestfulRequestMappingHandlerMapping.java" beforeDir="false" afterPath="$PROJECT_DIR$/netty-common/src/main/java/org/example/config/RestfulRequestMappingHandlerMapping.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/netty-common/src/main/java/org/example/config/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/netty-common/src/main/java/org/example/config/readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/netty-common/src/main/java/org/example/controller/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/netty-common/src/main/java/org/example/controller/TestController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/netty-common/src/main/java/org/example/controller/TestInter.java" beforeDir="false" afterPath="$PROJECT_DIR$/netty-common/src/main/java/org/example/controller/TestInter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/netty-common/src/main/java/org/example/dispatcher/MessageDispatcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/netty-common/src/main/java/org/example/dispatcher/MessageDispatcher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/netty-common/src/main/java/org/example/dispatcher/MessageHandlerContainer.java" beforeDir="false" afterPath="$PROJECT_DIR$/netty-common/src/main/java/org/example/dispatcher/MessageHandlerContainer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/netty-common/src/main/java/org/example/enums/ErrCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/netty-common/src/main/java/org/example/enums/ErrCode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/netty-common/src/main/resources/log4j2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/netty-common/src/main/resources/log4j2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/netty-common/src/test/java/org/example/test/CommonTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/netty-common/src/test/java/org/example/test/CommonTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/netty-server-demo/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/netty-server-demo/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/netty-server-demo/src/main/java/org/example/messagehandler/auth/AuthRequestHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/netty-server-demo/src/main/java/org/example/messagehandler/auth/AuthRequestHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/netty-server-demo/src/main/java/org/example/server/NettyServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/netty-server-demo/src/main/java/org/example/server/NettyServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/netty-server-demo/src/main/java/org/example/server/handler/NettyServerHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/netty-server-demo/src/main/java/org/example/server/handler/NettyServerHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/netty-server-demo/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/netty-server-demo/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/netty-server-demo/src/main/resources/log4j2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/netty-server-demo/src/main/resources/log4j2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../webflux-transactional/.idea/libraries/Maven__junit_junit_4_12.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../webflux-transactional/webflux-transactional.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../webflux-transactional/webflux-transactional.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/netty-common/src/main/java/org/example/controller/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/netty-common/src/main/java/org/example/controller/TestRestController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -136,7 +97,7 @@
     <property name="project.structure.last.edited" value="模块" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -157,6 +118,29 @@
   <component name="RestClientSettings">
     <option name="REQUEST_HISTORY">
       <list>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8080/rest/restful/rest" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="service_name" />
+                <option name="value" value="restful" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8080/rest/restful/rest" />
+          <option name="urlPath" value="" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="servicename: test0" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
         <RestClientRequest>
           <option name="httpMethod" value="POST" />
           <option name="urlBase" value="http://localhost:8083/test2" />
@@ -452,7 +436,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.ServerApplication">
+  <component name="RunManager" selected="Spring Boot.DemoApplication">
     <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -465,6 +449,9 @@
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
+    </configuration>
+    <configuration name="generated-requests#29" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="29" runType="运行单个请求">
+      <method v="2" />
     </configuration>
     <configuration name="generated-requests#31" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="31" runType="运行单个请求">
       <method v="2" />
@@ -485,34 +472,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="netty-server-demo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="org.example.ServerApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
       <item itemvalue="HTTP 请求.generated-requests#31" />
       <item itemvalue="HTTP 请求.generated-requests#32" />
       <item itemvalue="HTTP 请求.generated-requests#33" />
-      <item itemvalue="Spring Boot.DemoApplication" />
-      <item itemvalue="Spring Boot.ServerApplication" />
       <item itemvalue="HTTP 请求.generated-requests#34" />
+      <item itemvalue="Spring Boot.DemoApplication" />
+      <item itemvalue="HTTP 请求.generated-requests#29" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="HTTP 请求.generated-requests#29" />
         <item itemvalue="HTTP 请求.generated-requests#34" />
         <item itemvalue="HTTP 请求.generated-requests#33" />
         <item itemvalue="HTTP 请求.generated-requests#32" />
         <item itemvalue="HTTP 请求.generated-requests#31" />
-        <item itemvalue="Spring Boot.ServerApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -529,7 +503,8 @@
       <workItem from="1618194193021" duration="217000" />
       <workItem from="1618194455251" duration="192000" />
       <workItem from="1618194679507" duration="17935000" />
-      <workItem from="1618449821067" duration="13371000" />
+      <workItem from="1618449821067" duration="14671000" />
+      <workItem from="1618469616069" duration="6320000" />
     </task>
     <task id="LOCAL-00001" summary="@pathvariable性能问题">
       <created>1618222278005</created>
@@ -641,9 +616,6 @@
       </breakpoints>
     </breakpoint-manager>
     <watches-manager>
-      <configuration name="SpringBootApplicationConfigurationType">
-        <watch expression="bytes.length" language="JAVA" />
-      </configuration>
       <configuration name="Application">
         <watch expression="this.getClass().getClassLoader().getResource(packageName.replaceAll(&quot;\\.&quot;, &quot;/&quot;))" language="JAVA" />
         <watch expression="file.getName().replace(&quot;.class&quot;, &quot;&quot;).trim()" language="JAVA" />

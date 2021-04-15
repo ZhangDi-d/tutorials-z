@@ -6,21 +6,14 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="netty-client-demo" />
         <module name="netty-common" />
         <module name="netty-server-demo" />
+        <module name="netty-client-demo" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="gupaoedu-vip-netty-chat" target="1.7" />
-      <module name="gupaoedu-vip-netty-io" target="1.5" />
-      <module name="gupaoedu-vip-netty-rpc" target="1.5" />
-      <module name="gupaoedu-vip-netty-tomcat" target="1.5" />
-    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="gupaoedu-vip-netty-chat" options="-verbose -bootclasspath &quot;$PROJECT_DIR$/../../../../../../Program Files/Java/jdk-14.0.2/jre/lib/rt.jar&quot;" />
       <module name="netty-client-demo" options="-parameters" />
       <module name="netty-common" options="-parameters" />
       <module name="netty-server-demo" options="-parameters" />
