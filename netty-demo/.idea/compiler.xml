@@ -7,8 +7,9 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="netty-common" />
-        <module name="netty-server-demo" />
+        <module name="spring-factroybean-demo" />
         <module name="netty-client-demo" />
+        <module name="netty-server-demo" />
       </profile>
     </annotationProcessing>
   </component>
@@ -17,6 +18,7 @@
       <module name="netty-client-demo" options="-parameters" />
       <module name="netty-common" options="-parameters" />
       <module name="netty-server-demo" options="-parameters" />
+      <module name="spring-factroybean-demo" options="-parameters" />
     </option>
   </component>
 </project>

@@ -5,12 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="249141f7-0f27-400c-af11-139fbcd3cc72" name="默认变更列表" comment="netty 1">
-      <change afterPath="$PROJECT_DIR$/netty-common/src/main/java/org/example/config/WebConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-factroybean-demo/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-factroybean-demo/readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-factroybean-demo/src/main/java/org/example/entity/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-factroybean-demo/src/main/java/org/example/entity/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-factroybean-demo/src/main/java/org/example/entity/Teacher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-factroybean-demo/src/main/java/org/example/factorybean/ClassProxy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-factroybean-demo/src/main/java/org/example/factorybean/InterfaceInvocationHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-factroybean-demo/src/main/java/org/example/factorybean/InterfaceProxy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-factroybean-demo/src/main/java/org/example/factorybean/MethodInterceptorImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-factroybean-demo/src/main/java/org/example/factorybean/ProxyFactoryBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-factroybean-demo/src/main/java/org/example/factorybean/TestMain.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/netty-common/src/main/java/org/example/config/RestfulRequestMappingHandlerMapping.java" beforeDir="false" afterPath="$PROJECT_DIR$/netty-common/src/main/java/org/example/config/RestfulRequestMappingHandlerMapping.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/netty-common/src/main/java/org/example/config/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/netty-common/src/main/java/org/example/config/readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/netty-common/src/main/java/org/example/controller/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/netty-common/src/main/java/org/example/controller/TestRestController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +34,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -76,7 +86,9 @@
     </option>
   </component>
   <component name="ProjectId" id="1qm8J6adGXVTshI2PZMkJzfrBtj" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -436,7 +448,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.DemoApplication">
+  <component name="RunManager" selected="应用程序.TestMain">
+    <configuration name="TestMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.factorybean.TestMain" />
+      <module name="spring-factroybean-demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.entity.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -451,9 +476,6 @@
       </method>
     </configuration>
     <configuration name="generated-requests#29" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="29" runType="运行单个请求">
-      <method v="2" />
-    </configuration>
-    <configuration name="generated-requests#31" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="31" runType="运行单个请求">
       <method v="2" />
     </configuration>
     <configuration name="generated-requests#32" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="32" runType="运行单个请求">
@@ -473,20 +495,20 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="HTTP 请求.generated-requests#31" />
       <item itemvalue="HTTP 请求.generated-requests#32" />
       <item itemvalue="HTTP 请求.generated-requests#33" />
       <item itemvalue="HTTP 请求.generated-requests#34" />
       <item itemvalue="Spring Boot.DemoApplication" />
       <item itemvalue="HTTP 请求.generated-requests#29" />
+      <item itemvalue="应用程序.TestMain" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="应用程序.TestMain" />
         <item itemvalue="HTTP 请求.generated-requests#29" />
         <item itemvalue="HTTP 请求.generated-requests#34" />
         <item itemvalue="HTTP 请求.generated-requests#33" />
         <item itemvalue="HTTP 请求.generated-requests#32" />
-        <item itemvalue="HTTP 请求.generated-requests#31" />
       </list>
     </recent_temporary>
   </component>
@@ -504,7 +526,7 @@
       <workItem from="1618194455251" duration="192000" />
       <workItem from="1618194679507" duration="17935000" />
       <workItem from="1618449821067" duration="14671000" />
-      <workItem from="1618469616069" duration="6320000" />
+      <workItem from="1618469616069" duration="20301000" />
     </task>
     <task id="LOCAL-00001" summary="@pathvariable性能问题">
       <created>1618222278005</created>
@@ -613,13 +635,81 @@
           <line>26</line>
           <option name="timeStamp" value="17" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../spring-factroybean-demo/src/main/java/org/example/factorybean/ProxyFactoryBean.java</url>
+          <line>21</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/5.3.3/spring-beans-5.3.3-sources.jar!/org/springframework/beans/factory/support/AbstractBeanFactory.java</url>
+          <line>1848</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/5.3.3/spring-beans-5.3.3-sources.jar!/org/springframework/beans/factory/support/DefaultListableBeanFactory.java</url>
+          <line>341</line>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../spring-factroybean-demo/src/main/java/org/example/factorybean/ProxyFactoryBean.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../spring-factroybean-demo/src/main/java/org/example/factorybean/ProxyFactoryBean.java</url>
+          <line>23</line>
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../spring-factroybean-demo/src/main/java/org/example/factorybean/MethodInterceptorImpl.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../spring-factroybean-demo/src/main/java/org/example/factorybean/InterfaceProxy.java</url>
+          <line>27</line>
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/5.3.3/spring-beans-5.3.3-sources.jar!/org/springframework/beans/factory/support/AbstractBeanFactory.java</url>
+          <line>207</line>
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/5.3.3/spring-beans-5.3.3-sources.jar!/org/springframework/beans/factory/support/DefaultListableBeanFactory.java</url>
+          <line>978</line>
+          <option name="timeStamp" value="28" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/5.3.5/spring-beans-5.3.5.jar!/org/springframework/beans/factory/support/AbstractBeanFactory.class</url>
+          <line>1246</line>
+          <option name="timeStamp" value="32" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/5.3.3/spring-beans-5.3.3-sources.jar!/org/springframework/beans/factory/support/FactoryBeanRegistrySupport.java</url>
+          <line>96</line>
+          <option name="timeStamp" value="33" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/5.3.5/spring-beans-5.3.5.jar!/org/springframework/beans/factory/support/FactoryBeanRegistrySupport.class</url>
+          <line>41</line>
+          <option name="timeStamp" value="34" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/5.3.5/spring-beans-5.3.5-sources.jar!/org/springframework/beans/factory/support/AbstractBeanFactory.java</url>
+          <line>251</line>
+          <option name="timeStamp" value="36" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../spring-factroybean-demo/src/main/java/org/example/factorybean/ClassProxy.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="37" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <watches-manager>
       <configuration name="Application">
-        <watch expression="this.getClass().getClassLoader().getResource(packageName.replaceAll(&quot;\\.&quot;, &quot;/&quot;))" language="JAVA" />
-        <watch expression="file.getName().replace(&quot;.class&quot;, &quot;&quot;).trim()" language="JAVA" />
-        <watch expression="file.getName()" language="JAVA" />
+        <watch expression="this.getClass()" language="JAVA" />
       </configuration>
     </watches-manager>
   </component>
