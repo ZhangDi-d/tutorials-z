@@ -5,12 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="249141f7-0f27-400c-af11-139fbcd3cc72" name="默认变更列表" comment="netty 1">
-      <change afterPath="$PROJECT_DIR$/netty-common/src/main/java/org/example/config/WebConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springmvc-restful-opt/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springmvc-restful-opt/src/main/java/example/DemoApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springmvc-restful-opt/src/main/java/example/config/RestfulRequestMappingHandlerMapping.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springmvc-restful-opt/src/main/java/example/config/WebConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springmvc-restful-opt/src/main/java/example/config/readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springmvc-restful-opt/src/main/java/example/controller/TestRestController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springmvc-restful-opt/src/main/java/example/controller/response/Response.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springmvc-restful-opt/src/main/java/example/entity/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springmvc-restful-opt/src/main/java/example/enums/ErrCode.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/netty-common/src/main/java/org/example/config/RestfulRequestMappingHandlerMapping.java" beforeDir="false" afterPath="$PROJECT_DIR$/netty-common/src/main/java/org/example/config/RestfulRequestMappingHandlerMapping.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/netty-common/src/main/java/org/example/config/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/netty-common/src/main/java/org/example/config/readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/netty-common/src/main/java/org/example/controller/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/netty-common/src/main/java/org/example/controller/TestRestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/netty-demo.iml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,28 +48,6 @@
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
   </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.6.Final/netty-all-4.1.6.Final-sources.jar!/io/netty/channel/ChannelInitializer.java" root0="SKIP_INSPECTION" />
-    <setting file="jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.6.Final/netty-all-4.1.6.Final-sources.jar!/io/netty/channel/ChannelInboundHandler.java" root0="SKIP_INSPECTION" />
-    <setting file="jar://$MAVEN_REPOSITORY$/io/netty/netty-common/4.1.58.Final/netty-common-4.1.58.Final-sources.jar!/io/netty/util/concurrent/SingleThreadEventExecutor.java" root0="SKIP_INSPECTION" />
-    <setting file="jar://$MAVEN_REPOSITORY$/io/netty/netty-transport/4.1.58.Final/netty-transport-4.1.58.Final-sources.jar!/io/netty/channel/ChannelPipeline.java" root0="SKIP_INSPECTION" />
-    <setting file="jar://$MAVEN_REPOSITORY$/io/netty/netty-transport/4.1.58.Final/netty-transport-4.1.58.Final-sources.jar!/io/netty/channel/AbstractChannel.java" root0="SKIP_INSPECTION" />
-    <setting file="jar://$MAVEN_REPOSITORY$/io/netty/netty-transport/4.1.58.Final/netty-transport-4.1.58.Final-sources.jar!/io/netty/channel/embedded/EmbeddedChannel.java" root0="SKIP_INSPECTION" />
-    <setting file="jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.6.Final/netty-all-4.1.6.Final-sources.jar!/io/netty/channel/ChannelPipeline.java" root0="SKIP_INSPECTION" />
-    <setting file="jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.6.Final/netty-all-4.1.6.Final-sources.jar!/io/netty/channel/DefaultChannelPipeline.java" root0="SKIP_INSPECTION" />
-    <setting file="jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.6.Final/netty-all-4.1.6.Final-sources.jar!/io/netty/util/concurrent/AbstractEventExecutor.java" root0="SKIP_INSPECTION" />
-    <setting file="jar://$MAVEN_REPOSITORY$/io/netty/netty-transport/4.1.58.Final/netty-transport-4.1.58.Final-sources.jar!/io/netty/channel/Channel.java" root0="SKIP_INSPECTION" />
-    <setting file="jar://$MAVEN_REPOSITORY$/io/netty/netty-transport/4.1.58.Final/netty-transport-4.1.58.Final-sources.jar!/io/netty/channel/EventLoop.java" root0="SKIP_INSPECTION" />
-    <setting file="jar://$MAVEN_REPOSITORY$/io/netty/netty-transport/4.1.58.Final/netty-transport-4.1.58.Final-sources.jar!/io/netty/channel/nio/AbstractNioChannel.java" root0="SKIP_INSPECTION" />
-    <setting file="jar://$PROJECT_DIR$/../../../../../../Program Files/Java/jdk-15.0.2/lib/src.zip!/java.base/java/util/concurrent/Executor.java" root0="SKIP_INSPECTION" />
-    <setting file="jar://$MAVEN_REPOSITORY$/io/netty/netty-transport/4.1.58.Final/netty-transport-4.1.58.Final-sources.jar!/io/netty/channel/EventLoopGroup.java" root0="SKIP_INSPECTION" />
-    <setting file="jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.6.Final/netty-all-4.1.6.Final-sources.jar!/io/netty/util/internal/StringUtil.java" root0="SKIP_INSPECTION" />
-    <setting file="jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.6.Final/netty-all-4.1.6.Final-sources.jar!/io/netty/channel/AbstractChannelHandlerContext.java" root0="SKIP_INSPECTION" />
-    <setting file="jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.50.Final/netty-all-4.1.50.Final-sources.jar!/io/netty/buffer/ByteBuf.java" root0="SKIP_INSPECTION" />
-    <setting file="jar://$MAVEN_REPOSITORY$/io/netty/netty-transport/4.1.58.Final/netty-transport-4.1.58.Final-sources.jar!/io/netty/channel/DefaultChannelPipeline.java" root0="SKIP_INSPECTION" />
-    <setting file="jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.6.Final/netty-all-4.1.6.Final-sources.jar!/io/netty/util/concurrent/EventExecutor.java" root0="SKIP_INSPECTION" />
-    <setting file="jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.6.Final/netty-all-4.1.6.Final-sources.jar!/io/netty/util/concurrent/SingleThreadEventExecutor.java" root0="SKIP_INSPECTION" />
-  </component>
   <component name="KubernetesApiPersistence">
     <option name="context" value="docker-desktop" />
     <option name="namespace" value="default" />
@@ -70,7 +56,7 @@
     <option name="generalSettings">
       <MavenGeneralSettings>
         <option name="localRepository" value="D:\Program Files\Maven\repo" />
-        <option name="mavenHome" value="D:\Program Files\Maven\apache-maven-3.6.3-bin\apache-maven-3.6.3" />
+        <option name="mavenHome" value="E:\ProgrammingLanguage\java\IDE\IntelliJ IDEA 2020.2.3\plugins\maven\lib\maven3" />
         <option name="userSettingsFile" value="D:\Program Files\Maven\apache-maven-3.6.3-bin\apache-maven-3.6.3\conf\settings.xml" />
       </MavenGeneralSettings>
     </option>
@@ -92,27 +78,28 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/netty-client-demo/src/main/java/org/example/client" />
+    <property name="jdk.selected.JAVA_MODULE" value="15" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../springmvc-restful-opt/pom.xml" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="模块" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Work\Learn\github\zd\tutorials-z\netty-demo\netty-client-demo\src\main\java\org\example\client" />
-      <recent name="D:\Work\Learn\github\zd\tutorials-z\netty-demo\netty-client-demo\src\main\java\org\example\messagehandler" />
-      <recent name="D:\Work\Learn\github\zd\tutorials-z\netty-demo\netty-client-demo\src\main\java\org\example\message" />
-      <recent name="D:\Work\Learn\github\zd\tutorials-z\netty-demo\netty-client-demo\src\main\resources" />
-      <recent name="D:\Work\Learn\github\zd\tutorials-z\netty-demo" />
-    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="org.example.controller" />
       <recent name="org.example.config" />
       <recent name="org.example.messagehandler.heartbeat" />
       <recent name="org.example.server" />
       <recent name="org.example.dispatcher" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Blog\tutorials-z\springmvc-restful-opt\src\main\java" />
+      <recent name="D:\Work\Learn\github\zd\tutorials-z\netty-demo\netty-client-demo\src\main\java\org\example\client" />
+      <recent name="D:\Work\Learn\github\zd\tutorials-z\netty-demo\netty-client-demo\src\main\java\org\example\messagehandler" />
+      <recent name="D:\Work\Learn\github\zd\tutorials-z\netty-demo\netty-client-demo\src\main\java\org\example\message" />
+      <recent name="D:\Work\Learn\github\zd\tutorials-z\netty-demo\netty-client-demo\src\main\resources" />
     </key>
   </component>
   <component name="RestClientSettings">
@@ -437,15 +424,13 @@
     </option>
   </component>
   <component name="RunManager" selected="Spring Boot.DemoApplication">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -465,6 +450,53 @@
     <configuration name="generated-requests#34" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="34" runType="运行单个请求">
       <method v="2" />
     </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="netty-server-demo" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="netty-server-demo" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="DemoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="netty-common" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="org.example.DemoApplication" />
@@ -477,8 +509,8 @@
       <item itemvalue="HTTP 请求.generated-requests#32" />
       <item itemvalue="HTTP 请求.generated-requests#33" />
       <item itemvalue="HTTP 请求.generated-requests#34" />
-      <item itemvalue="Spring Boot.DemoApplication" />
       <item itemvalue="HTTP 请求.generated-requests#29" />
+      <item itemvalue="Spring Boot.DemoApplication" />
     </list>
     <recent_temporary>
       <list>
@@ -505,6 +537,7 @@
       <workItem from="1618194679507" duration="17935000" />
       <workItem from="1618449821067" duration="14671000" />
       <workItem from="1618469616069" duration="6320000" />
+      <workItem from="1618732366060" duration="1330000" />
     </task>
     <task id="LOCAL-00001" summary="@pathvariable性能问题">
       <created>1618222278005</created>
@@ -549,6 +582,20 @@
     <MESSAGE value="@pathvariable性能问题" />
     <MESSAGE value="netty 1" />
     <option name="LAST_COMMIT_MESSAGE" value="netty 1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="657" y="197" key="FileChooserDialogImpl" timestamp="1618733708722">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="657" y="197" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1618733708722" />
+    <state x="279" y="74" key="SettingsEditor" timestamp="1618732742394">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="279" y="74" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1618732742394" />
+    <state x="431" y="52" key="new project wizard" timestamp="1618733069608">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="431" y="52" key="new project wizard/0.0.1536.864@0.0.1536.864" timestamp="1618733069608" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -6,11 +6,15 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="netty-common" />
-        <module name="netty-server-demo" />
-        <module name="netty-client-demo" />
+        <module name="springmvc-restful-opt" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="netty-client-demo" target="14" />
+      <module name="netty-common" target="14" />
+      <module name="netty-demo" target="14" />
+      <module name="netty-server-demo" target="14" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
