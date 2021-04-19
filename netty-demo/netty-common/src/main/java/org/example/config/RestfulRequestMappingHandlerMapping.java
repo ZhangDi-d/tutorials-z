@@ -15,7 +15,10 @@ import java.util.Map;
 /**
  * @author dizhang
  * @date 2021-04-02
+ *
+ *
  */
+@Deprecated
 public class RestfulRequestMappingHandlerMapping extends RequestMappingHandlerMapping {
 
     private final Map<HandlerMethod, RequestMappingInfo> mappingLookup = new LinkedHashMap<>();
