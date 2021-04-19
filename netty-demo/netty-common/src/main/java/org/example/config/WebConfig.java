@@ -11,21 +11,33 @@ import org.springframework.web.util.pattern.PathPatternParser;
  * @author dizhang
  * @date 2021-04-15
  */
-//@Configuration
-//public class WebConfig extends WebMvcConfigurationSupport {
+@Configuration
+public class WebConfig extends WebMvcConfigurationSupport {
 //    @Override
 //    protected RequestMappingHandlerMapping createRequestMappingHandlerMapping() {
 //        return new RestfulRequestMappingHandlerMapping();
 //    }
-//}
 
 
 
-
-@Configuration   //PathPatternParser
-public class WebConfig implements WebMvcConfigurer {
     @Override
+    protected RestRequestMappingHandlerMapping createRequestMappingHandlerMapping() {
+        return new RestRequestMappingHandlerMapping();
+    }
+
+        @Override
     public void configurePathMatch(PathMatchConfigurer configurer) {
         configurer.setPatternParser(new PathPatternParser());
     }
 }
+
+
+
+//
+//@Configuration   //PathPatternParser
+//public class WebConfig implements WebMvcConfigurer {
+//    @Override
+//    public void configurePathMatch(PathMatchConfigurer configurer) {
+//        configurer.setPatternParser(new PathPatternParser());
+//    }
+//}
