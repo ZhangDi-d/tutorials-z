@@ -5,11 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="249141f7-0f27-400c-af11-139fbcd3cc72" name="默认变更列表" comment="netty 1">
-      <change afterPath="$PROJECT_DIR$/netty-common/src/main/java/org/example/config/RestRequestMappingHandlerMapping.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/netty-common/src/main/java/org/example/config/RestfulRequestMappingHandlerMapping.java" beforeDir="false" afterPath="$PROJECT_DIR$/netty-common/src/main/java/org/example/config/RestfulRequestMappingHandlerMapping.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/netty-common/src/main/java/org/example/config/WebConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/netty-common/src/main/java/org/example/config/WebConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/netty-common/src/main/java/org/example/controller/TestRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/netty-common/src/main/java/org/example/controller/TestRestController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springmvc-restful-opt/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springmvc-restful-opt/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springmvc-restful-opt/src/main/java/example/DemoApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springmvc-restful-opt/src/main/java/example/config/RestfulRequestMappingHandlerMapping.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springmvc-restful-opt/src/main/java/example/config/WebConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springmvc-restful-opt/src/main/java/example/config/readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springmvc-restful-opt/src/main/java/example/controller/TestRestController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springmvc-restful-opt/src/main/java/example/controller/response/Response.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springmvc-restful-opt/src/main/java/example/entity/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springmvc-restful-opt/src/main/java/example/enums/ErrCode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springmvc-restful-opt/src/main/resources/application.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springmvc-restful-opt/src/main/resources/log4j2.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,6 +61,7 @@
     <setting file="jar://$MAVEN_REPOSITORY$/io/netty/netty-transport/4.1.58.Final/netty-transport-4.1.58.Final-sources.jar!/io/netty/channel/EventLoop.java" root0="SKIP_INSPECTION" />
     <setting file="jar://$MAVEN_REPOSITORY$/io/netty/netty-transport/4.1.58.Final/netty-transport-4.1.58.Final-sources.jar!/io/netty/channel/nio/AbstractNioChannel.java" root0="SKIP_INSPECTION" />
     <setting file="jar://$PROJECT_DIR$/../../../../../../Program Files/Java/jdk-15.0.2/lib/src.zip!/java.base/java/util/concurrent/Executor.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/netty-common/src/main/java/org/example/config/readme.md" root0="FORCE_HIGHLIGHTING" root1="SKIP_HIGHLIGHTING" />
     <setting file="jar://$MAVEN_REPOSITORY$/io/netty/netty-transport/4.1.58.Final/netty-transport-4.1.58.Final-sources.jar!/io/netty/channel/EventLoopGroup.java" root0="SKIP_INSPECTION" />
     <setting file="jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.6.Final/netty-all-4.1.6.Final-sources.jar!/io/netty/util/internal/StringUtil.java" root0="SKIP_INSPECTION" />
     <setting file="jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.6.Final/netty-all-4.1.6.Final-sources.jar!/io/netty/channel/AbstractChannelHandlerContext.java" root0="SKIP_INSPECTION" />
@@ -488,8 +496,8 @@
       <item itemvalue="HTTP 请求.generated-requests#32" />
       <item itemvalue="HTTP 请求.generated-requests#33" />
       <item itemvalue="HTTP 请求.generated-requests#34" />
-      <item itemvalue="Spring Boot.DemoApplication" />
       <item itemvalue="HTTP 请求.generated-requests#29" />
+      <item itemvalue="Spring Boot.DemoApplication" />
       <item itemvalue="应用程序.TestMain" />
     </list>
     <recent_temporary>
