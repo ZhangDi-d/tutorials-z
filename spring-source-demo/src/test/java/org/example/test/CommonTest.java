@@ -1,11 +1,11 @@
 package org.example.test;
 
 import com.alibaba.fastjson.JSONObject;
-import org.example.AbstractTest;
 import lombok.Data;
 import org.apache.commons.lang.StringUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.example.AbstractTest;
 import org.example.entity.MyTestBean;
 import org.example.entity.User;
 import org.junit.jupiter.api.BeforeEach;
@@ -13,6 +13,7 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.BeanFactory;
 import org.springframework.beans.factory.xml.XmlBeanFactory;
 import org.springframework.core.io.ClassPathResource;
+import org.springframework.util.CollectionUtils;
 import org.springframework.util.LinkedMultiValueMap;
 import org.springframework.util.MultiValueMap;
 
@@ -226,7 +227,21 @@ public class CommonTest extends AbstractTest {
     }
 
 
+    @Test
+    public void test18() {
+        Properties properties = new Properties();
+        properties.put("zhangsan", "111");
+        properties.put("lisi", "111");
+
+        HashMap<String, String> map2 = new HashMap<>();
+        map2.put("wangwu", "222");
+        CollectionUtils.mergePropertiesIntoMap(properties, map2);
+
+        System.out.println(map2);
+    }
+
 }
+
 
 
 

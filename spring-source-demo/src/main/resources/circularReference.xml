@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+         http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+    <!--构造器循环依赖 -->
+    <bean id="testA" class="org.example.circularreference.TestA">
+        <constructor-arg index="0" ref="testB"/>
+    </bean>
+    <bean id="testB" class="org.example.circularreference.TestB">
+        <constructor-arg index="0" ref="testC"/>
+    </bean>
+    <bean id="testC" class="org.example.circularreference.TestC">
+        <constructor-arg index="0" ref="testA"/>
+    </bean>
+</beans>

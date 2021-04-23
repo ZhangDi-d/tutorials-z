@@ -4,7 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="249141f7-0f27-400c-af11-139fbcd3cc72" name="默认变更列表" comment="factory bean" />
+    <list default="true" id="249141f7-0f27-400c-af11-139fbcd3cc72" name="默认变更列表" comment="factory bean">
+      <change afterPath="$PROJECT_DIR$/../spring-source-demo/src/main/java/org/example/circularreference/TestA.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-source-demo/src/main/java/org/example/circularreference/TestB.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-source-demo/src/main/java/org/example/circularreference/TestC.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-source-demo/src/main/java/org/example/entity/Car.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-source-demo/src/main/java/org/example/factorybean/CarFactoryBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-source-demo/src/main/resources/circularReference.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-source-demo/src/test/java/org/example/test/CircularReferenceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-source-demo/src/test/java/org/example/test/SpringBeanTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-source-demo/log/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-source-demo/log/debug.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-source-demo/log/info.log" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-source-demo/log/info.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-source-demo/src/main/resources/beanFactoryTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-source-demo/src/main/resources/beanFactoryTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-source-demo/src/test/java/org/example/test/CommonTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-source-demo/src/test/java/org/example/test/CommonTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -93,7 +107,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="15" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../spring-source-demo/src/test/java" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../spring-source-demo" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="模块" />
     <property name="project.structure.proportion" value="0.15" />
@@ -102,11 +116,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Work\Learn\github\zd\tutorials-z\spring-source-demo" />
       <recent name="D:\Work\Learn\github\zd\tutorials-z\spring-source-demo\src\test\java" />
       <recent name="D:\Work\Learn\github\zd\tutorials-z\spring-source-demo\src\main\java\org\example" />
       <recent name="D:\Work\Learn\github\zd\tutorials-z\spring-factroybean-demo\src\main\resources" />
       <recent name="D:\Work\Learn\github\zd\tutorials-z\spring-factroybean-demo\src\test\java" />
-      <recent name="D:\Work\Learn\github\zd\tutorials-z\spring-factroybean-demo" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="org" />
@@ -440,7 +454,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.CommonTest.testSimpleLoad (1)">
+  <component name="RunManager" selected="JUnit.CircularReferenceTest.circleReferenceTest">
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -452,8 +466,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CommonTest.test15" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="netty-common" />
+    <configuration name="CircularReferenceTest.circleReferenceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring-source-demo" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="org.example.test.*" />
@@ -461,24 +475,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.example.test" />
-      <option name="MAIN_CLASS_NAME" value="org.example.test.CommonTest" />
-      <option name="METHOD_NAME" value="test15" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CommonTest.test16" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="netty-common" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.example.test" />
-      <option name="MAIN_CLASS_NAME" value="org.example.test.CommonTest" />
-      <option name="METHOD_NAME" value="test16" />
+      <option name="MAIN_CLASS_NAME" value="org.example.test.CircularReferenceTest" />
+      <option name="METHOD_NAME" value="circleReferenceTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -500,8 +498,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CommonTest.testSimpleLoad" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="netty-common" />
+    <configuration name="CommonTest.test18" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring-source-demo" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="org.example.test.*" />
@@ -510,7 +508,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="org.example.test" />
       <option name="MAIN_CLASS_NAME" value="org.example.test.CommonTest" />
-      <option name="METHOD_NAME" value="testSimpleLoad" />
+      <option name="METHOD_NAME" value="test18" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -532,6 +530,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SpringBeanTest.factoryBeanTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring-source-demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.test" />
+      <option name="MAIN_CLASS_NAME" value="org.example.test.SpringBeanTest" />
+      <option name="METHOD_NAME" value="factoryBeanTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="DemoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="netty-common" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="org.example.DemoApplication" />
@@ -540,20 +554,20 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.CommonTest.test15" />
-      <item itemvalue="JUnit.CommonTest.test16" />
-      <item itemvalue="JUnit.CommonTest.testSimpleLoad" />
       <item itemvalue="JUnit.CommonTest.test17" />
       <item itemvalue="Spring Boot.DemoApplication" />
       <item itemvalue="JUnit.CommonTest.testSimpleLoad (1)" />
+      <item itemvalue="JUnit.CommonTest.test18" />
+      <item itemvalue="JUnit.SpringBeanTest.factoryBeanTest" />
+      <item itemvalue="JUnit.CircularReferenceTest.circleReferenceTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CircularReferenceTest.circleReferenceTest" />
+        <item itemvalue="JUnit.SpringBeanTest.factoryBeanTest" />
+        <item itemvalue="JUnit.CommonTest.test18" />
         <item itemvalue="JUnit.CommonTest.testSimpleLoad (1)" />
         <item itemvalue="JUnit.CommonTest.test17" />
-        <item itemvalue="JUnit.CommonTest.testSimpleLoad" />
-        <item itemvalue="JUnit.CommonTest.test16" />
-        <item itemvalue="JUnit.CommonTest.test15" />
       </list>
     </recent_temporary>
   </component>
@@ -572,7 +586,7 @@
       <workItem from="1618194679507" duration="17935000" />
       <workItem from="1618449821067" duration="14671000" />
       <workItem from="1618469616069" duration="38410000" />
-      <workItem from="1619139468106" duration="1782000" />
+      <workItem from="1619139468106" duration="18883000" />
     </task>
     <task id="LOCAL-00001" summary="@pathvariable性能问题">
       <created>1618222278005</created>
@@ -645,198 +659,16 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/../../../netty/netty4-samples/gupaoedu-vip-netty-rpc/src/main/java/com/gupaoedu/vip/netty/rpc/registry/RegistryHandler.java</url>
-          <line>57</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/../../../netty/netty4-samples/gupaoedu-vip-netty-rpc/src/main/java/com/gupaoedu/vip/netty/rpc/registry/RpcRegistry.java</url>
-          <line>50</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/../../../netty/netty4-samples/gupaoedu-vip-netty-rpc/src/main/java/com/gupaoedu/vip/netty/rpc/registry/RegistryHandler.java</url>
-          <line>31</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.6.Final/netty-all-4.1.6.Final-sources.jar!/io/netty/channel/ChannelInitializer.java</url>
-          <line>110</line>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.6.Final/netty-all-4.1.6.Final-sources.jar!/io/netty/channel/ChannelInitializer.java</url>
-          <line>127</line>
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/netty-common/src/main/java/org/example/codec/InvocationEncoder.java</url>
-          <line>17</line>
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/netty-client-demo/src/main/java/org/example/controller/TestController.java</url>
-          <line>18</line>
-          <option name="timeStamp" value="12" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/netty-common/src/main/java/org/example/dispatcher/MessageDispatcher.java</url>
-          <line>26</line>
-          <option name="timeStamp" value="13" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/netty-common/src/main/java/org/example/dispatcher/MessageHandlerContainer.java</url>
-          <line>37</line>
-          <option name="timeStamp" value="14" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/netty-server-demo/src/main/java/org/example/messagehandler/chat/ChatSendToOneHandler.java</url>
-          <line>27</line>
-          <option name="timeStamp" value="15" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/netty-common/src/main/java/org/example/codec/InvocationDecoder.java</url>
-          <line>20</line>
-          <option name="timeStamp" value="16" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/netty-server-demo/src/main/java/org/example/messagehandler/auth/AuthRequestHandler.java</url>
-          <line>26</line>
-          <option name="timeStamp" value="17" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/../spring-factroybean-demo/src/main/java/org/example/factorybean/ProxyFactoryBean.java</url>
-          <line>21</line>
-          <option name="timeStamp" value="18" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/5.3.3/spring-beans-5.3.3-sources.jar!/org/springframework/beans/factory/support/DefaultListableBeanFactory.java</url>
-          <line>341</line>
-          <option name="timeStamp" value="20" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/../spring-factroybean-demo/src/main/java/org/example/factorybean/ProxyFactoryBean.java</url>
-          <line>28</line>
-          <option name="timeStamp" value="21" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/../spring-factroybean-demo/src/main/java/org/example/factorybean/ProxyFactoryBean.java</url>
-          <line>23</line>
-          <option name="timeStamp" value="22" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/../spring-factroybean-demo/src/main/java/org/example/factorybean/MethodInterceptorImpl.java</url>
-          <line>26</line>
-          <option name="timeStamp" value="23" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/../spring-factroybean-demo/src/main/java/org/example/factorybean/InterfaceProxy.java</url>
-          <line>32</line>
-          <option name="timeStamp" value="24" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/../spring-factroybean-demo/src/main/java/org/example/factorybean/ClassProxy.java</url>
-          <line>13</line>
-          <option name="timeStamp" value="37" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.3.3/spring-webmvc-5.3.3-sources.jar!/org/springframework/web/servlet/handler/AbstractDetectingUrlHandlerMapping.java</url>
-          <line>57</line>
-          <option name="timeStamp" value="38" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/5.3.5/spring-context-5.3.5-sources.jar!/org/springframework/context/support/ApplicationObjectSupport.java</url>
-          <line>123</line>
-          <option name="timeStamp" value="39" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.3.3/spring-webmvc-5.3.3-sources.jar!/org/springframework/web/servlet/DispatcherServlet.java</url>
-          <line>495</line>
-          <option name="timeStamp" value="40" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.3.3/spring-webmvc-5.3.3-sources.jar!/org/springframework/web/servlet/DispatcherServlet.java</url>
-          <line>586</line>
-          <option name="timeStamp" value="41" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.3.3/spring-webmvc-5.3.3-sources.jar!/org/springframework/web/servlet/handler/AbstractDetectingUrlHandlerMapping.java</url>
-          <line>70</line>
-          <option name="timeStamp" value="42" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.3.3/spring-webmvc-5.3.3-sources.jar!/org/springframework/web/servlet/handler/AbstractUrlHandlerMapping.java</url>
-          <line>401</line>
-          <option name="timeStamp" value="43" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.3.3/spring-webmvc-5.3.3-sources.jar!/org/springframework/web/servlet/DispatcherServlet.java</url>
-          <line>1020</line>
-          <option name="timeStamp" value="44" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.3.3/spring-webmvc-5.3.3-sources.jar!/org/springframework/web/servlet/DispatcherServlet.java</url>
-          <line>1251</line>
-          <option name="timeStamp" value="45" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.3.3/spring-webmvc-5.3.3-sources.jar!/org/springframework/web/servlet/handler/AbstractHandlerMapping.java</url>
-          <line>490</line>
-          <option name="timeStamp" value="46" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.3.3/spring-webmvc-5.3.3-sources.jar!/org/springframework/web/servlet/handler/AbstractHandlerMethodMapping.java</url>
-          <line>382</line>
-          <option name="timeStamp" value="47" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.3.3/spring-webmvc-5.3.3-sources.jar!/org/springframework/web/servlet/handler/AbstractHandlerMethodMapping.java</url>
-          <line>580</line>
-          <option name="timeStamp" value="51" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/netty-common/src/main/java/org/example/config/RestfulRequestMappingHandlerMapping.java</url>
-          <line>35</line>
-          <option name="timeStamp" value="52" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/netty-common/src/main/java/org/example/config/RestfulRequestMappingHandlerMapping.java</url>
-          <line>51</line>
-          <option name="timeStamp" value="53" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.3.3/spring-webmvc-5.3.3-sources.jar!/org/springframework/web/servlet/handler/AbstractHandlerMethodMapping.java</url>
-          <line>607</line>
-          <option name="timeStamp" value="54" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.3.3/spring-webmvc-5.3.3-sources.jar!/org/springframework/web/servlet/handler/AbstractHandlerMethodMapping.java</url>
-          <line>620</line>
-          <option name="timeStamp" value="55" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.3.3/spring-webmvc-5.3.3-sources.jar!/org/springframework/web/servlet/handler/AbstractHandlerMethodMapping.java</url>
-          <line>648</line>
-          <option name="timeStamp" value="56" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/netty-common/src/main/java/org/example/config/RestRequestMappingHandlerMapping.java</url>
-          <line>44</line>
-          <option name="timeStamp" value="57" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/netty-common/src/main/java/org/example/config/RestRequestMappingHandlerMapping.java</url>
-          <line>27</line>
-          <option name="timeStamp" value="58" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.3.3/spring-web-5.3.3-sources.jar!/org/springframework/web/context/support/WebApplicationObjectSupport.java</url>
-          <line>77</line>
-          <option name="timeStamp" value="59" />
+          <url>file://$PROJECT_DIR$/../spring-source-demo/src/test/java/org/example/test/CircularReferenceTest.java</url>
+          <line>22</line>
+          <option name="timeStamp" value="61" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <watches-manager>
+      <configuration name="JUnit">
+        <watch expression="e.getCause().getCause().getCause()" language="JAVA" />
+      </configuration>
       <configuration name="Application">
         <watch expression="this.getClass()" language="JAVA" />
       </configuration>
