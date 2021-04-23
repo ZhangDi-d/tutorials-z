@@ -4,19 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="249141f7-0f27-400c-af11-139fbcd3cc72" name="默认变更列表" comment="netty 1">
-      <change afterPath="$PROJECT_DIR$/../springmvc-restful-opt/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springmvc-restful-opt/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springmvc-restful-opt/src/main/java/example/DemoApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springmvc-restful-opt/src/main/java/example/config/RestfulRequestMappingHandlerMapping.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springmvc-restful-opt/src/main/java/example/config/WebConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springmvc-restful-opt/src/main/java/example/config/readme.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springmvc-restful-opt/src/main/java/example/controller/TestRestController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springmvc-restful-opt/src/main/java/example/controller/response/Response.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springmvc-restful-opt/src/main/java/example/entity/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springmvc-restful-opt/src/main/java/example/enums/ErrCode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springmvc-restful-opt/src/main/resources/application.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springmvc-restful-opt/src/main/resources/log4j2.xml" afterDir="false" />
+    <list default="true" id="249141f7-0f27-400c-af11-139fbcd3cc72" name="默认变更列表" comment="factory bean">
+      <change afterPath="$PROJECT_DIR$/netty-common/src/main/java/org/example/entity/MyTestBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/netty-common/src/main/resources/beanFactoryTest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-source-demo/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-source-demo/src/main/java/org/example/Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-source-demo/src/main/java/org/example/entity/MyTestBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-source-demo/src/main/java/org/example/entity/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-source-demo/src/main/resources/application.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-source-demo/src/main/resources/beanFactoryTest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-source-demo/src/main/resources/log4j2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-source-demo/src/test/java/example/AbstractTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-source-demo/src/test/java/example/test/CommonTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/netty-common/src/main/java/org/example/controller/TestRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/netty-common/src/main/java/org/example/controller/TestRestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/netty-common/src/main/java/org/example/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/netty-common/src/main/java/org/example/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/netty-common/src/test/java/org/example/test/CommonTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/netty-common/src/test/java/org/example/test/CommonTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +67,7 @@
     <setting file="jar://$MAVEN_REPOSITORY$/io/netty/netty-transport/4.1.58.Final/netty-transport-4.1.58.Final-sources.jar!/io/netty/channel/EventLoop.java" root0="SKIP_INSPECTION" />
     <setting file="jar://$MAVEN_REPOSITORY$/io/netty/netty-transport/4.1.58.Final/netty-transport-4.1.58.Final-sources.jar!/io/netty/channel/nio/AbstractNioChannel.java" root0="SKIP_INSPECTION" />
     <setting file="jar://$PROJECT_DIR$/../../../../../../Program Files/Java/jdk-15.0.2/lib/src.zip!/java.base/java/util/concurrent/Executor.java" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/netty-common/src/main/java/org/example/config/readme.md" root0="FORCE_HIGHLIGHTING" root1="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/netty-common/src/main/java/org/example/config/readme.md" root0="SKIP_HIGHLIGHTING" root1="SKIP_HIGHLIGHTING" />
     <setting file="jar://$MAVEN_REPOSITORY$/io/netty/netty-transport/4.1.58.Final/netty-transport-4.1.58.Final-sources.jar!/io/netty/channel/EventLoopGroup.java" root0="SKIP_INSPECTION" />
     <setting file="jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.6.Final/netty-all-4.1.6.Final-sources.jar!/io/netty/util/internal/StringUtil.java" root0="SKIP_INSPECTION" />
     <setting file="jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.6.Final/netty-all-4.1.6.Final-sources.jar!/io/netty/channel/AbstractChannelHandlerContext.java" root0="SKIP_INSPECTION" />
@@ -83,6 +89,9 @@
       </MavenGeneralSettings>
     </option>
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedIndex" value="1" />
+  </component>
   <component name="ProjectId" id="1qm8J6adGXVTshI2PZMkJzfrBtj" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -102,7 +111,8 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/netty-client-demo/src/main/java/org/example/client" />
+    <property name="jdk.selected.JAVA_MODULE" value="15" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../spring-source-demo/src/test/java" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="模块" />
     <property name="project.structure.proportion" value="0.15" />
@@ -111,11 +121,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Work\Learn\github\zd\tutorials-z\netty-demo\netty-client-demo\src\main\java\org\example\client" />
-      <recent name="D:\Work\Learn\github\zd\tutorials-z\netty-demo\netty-client-demo\src\main\java\org\example\messagehandler" />
-      <recent name="D:\Work\Learn\github\zd\tutorials-z\netty-demo\netty-client-demo\src\main\java\org\example\message" />
-      <recent name="D:\Work\Learn\github\zd\tutorials-z\netty-demo\netty-client-demo\src\main\resources" />
-      <recent name="D:\Work\Learn\github\zd\tutorials-z\netty-demo" />
+      <recent name="D:\Work\Learn\github\zd\tutorials-z\spring-source-demo\src\test\java" />
+      <recent name="D:\Work\Learn\github\zd\tutorials-z\spring-source-demo\src\main\java\org\example" />
+      <recent name="D:\Work\Learn\github\zd\tutorials-z\spring-factroybean-demo\src\main\resources" />
+      <recent name="D:\Work\Learn\github\zd\tutorials-z\spring-factroybean-demo\src\test\java" />
+      <recent name="D:\Work\Learn\github\zd\tutorials-z\spring-factroybean-demo" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="org.example.controller" />
@@ -446,44 +456,97 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.DemoApplication">
-    <configuration name="TestMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.factorybean.TestMain" />
-      <module name="spring-factroybean-demo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.entity.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.CommonTest.testSimpleLoad (1)">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="generated-requests#29" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="29" runType="运行单个请求">
-      <method v="2" />
+    <configuration name="CommonTest.test15" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="netty-common" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.test" />
+      <option name="MAIN_CLASS_NAME" value="org.example.test.CommonTest" />
+      <option name="METHOD_NAME" value="test15" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
-    <configuration name="generated-requests#32" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="32" runType="运行单个请求">
-      <method v="2" />
+    <configuration name="CommonTest.test16" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="netty-common" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.test" />
+      <option name="MAIN_CLASS_NAME" value="org.example.test.CommonTest" />
+      <option name="METHOD_NAME" value="test16" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
-    <configuration name="generated-requests#33" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="33" runType="运行单个请求">
-      <method v="2" />
+    <configuration name="CommonTest.test17" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="netty-common" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.test" />
+      <option name="MAIN_CLASS_NAME" value="org.example.test.CommonTest" />
+      <option name="METHOD_NAME" value="test17" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
-    <configuration name="generated-requests#34" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="34" runType="运行单个请求">
-      <method v="2" />
+    <configuration name="CommonTest.testSimpleLoad" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="netty-common" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.test" />
+      <option name="MAIN_CLASS_NAME" value="org.example.test.CommonTest" />
+      <option name="METHOD_NAME" value="testSimpleLoad" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CommonTest.testSimpleLoad" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring-source-demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.test" />
+      <option name="MAIN_CLASS_NAME" value="org.example.test.CommonTest" />
+      <option name="METHOD_NAME" value="testSimpleLoad" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="DemoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="netty-common" />
@@ -493,20 +556,20 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="HTTP 请求.generated-requests#32" />
-      <item itemvalue="HTTP 请求.generated-requests#33" />
-      <item itemvalue="HTTP 请求.generated-requests#34" />
-      <item itemvalue="HTTP 请求.generated-requests#29" />
+      <item itemvalue="JUnit.CommonTest.test15" />
+      <item itemvalue="JUnit.CommonTest.test16" />
+      <item itemvalue="JUnit.CommonTest.testSimpleLoad" />
+      <item itemvalue="JUnit.CommonTest.test17" />
       <item itemvalue="Spring Boot.DemoApplication" />
-      <item itemvalue="应用程序.TestMain" />
+      <item itemvalue="JUnit.CommonTest.testSimpleLoad (1)" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="应用程序.TestMain" />
-        <item itemvalue="HTTP 请求.generated-requests#29" />
-        <item itemvalue="HTTP 请求.generated-requests#34" />
-        <item itemvalue="HTTP 请求.generated-requests#33" />
-        <item itemvalue="HTTP 请求.generated-requests#32" />
+        <item itemvalue="JUnit.CommonTest.testSimpleLoad (1)" />
+        <item itemvalue="JUnit.CommonTest.test17" />
+        <item itemvalue="JUnit.CommonTest.testSimpleLoad" />
+        <item itemvalue="JUnit.CommonTest.test16" />
+        <item itemvalue="JUnit.CommonTest.test15" />
       </list>
     </recent_temporary>
   </component>
@@ -525,6 +588,7 @@
       <workItem from="1618194679507" duration="17935000" />
       <workItem from="1618449821067" duration="14671000" />
       <workItem from="1618469616069" duration="38410000" />
+      <workItem from="1619139468106" duration="1430000" />
     </task>
     <task id="LOCAL-00001" summary="@pathvariable性能问题">
       <created>1618222278005</created>
@@ -547,7 +611,28 @@
       <option name="project" value="LOCAL" />
       <updated>1618454926590</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="springmvc">
+      <created>1618829030690</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1618829030690</updated>
+    </task>
+    <task id="LOCAL-00005" summary="springmvc">
+      <created>1618829120531</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1618829120531</updated>
+    </task>
+    <task id="LOCAL-00006" summary="factory bean">
+      <created>1618829203944</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1618829203944</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -568,7 +653,9 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="@pathvariable性能问题" />
     <MESSAGE value="netty 1" />
-    <option name="LAST_COMMIT_MESSAGE" value="netty 1" />
+    <MESSAGE value="springmvc" />
+    <MESSAGE value="factory bean" />
+    <option name="LAST_COMMIT_MESSAGE" value="factory bean" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -725,12 +812,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/netty-common/src/main/java/org/example/config/RestfulRequestMappingHandlerMapping.java</url>
-          <line>32</line>
+          <line>35</line>
           <option name="timeStamp" value="52" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/netty-common/src/main/java/org/example/config/RestfulRequestMappingHandlerMapping.java</url>
-          <line>48</line>
+          <line>51</line>
           <option name="timeStamp" value="53" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">

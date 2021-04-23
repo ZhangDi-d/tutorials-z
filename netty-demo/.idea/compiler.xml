@@ -9,6 +9,7 @@
         <module name="netty-common" />
         <module name="spring-factroybean-demo" />
         <module name="netty-client-demo" />
+        <module name="spring-source-demo" />
         <module name="netty-server-demo" />
       </profile>
     </annotationProcessing>
@@ -19,6 +20,7 @@
       <module name="netty-common" options="-parameters" />
       <module name="netty-server-demo" options="-parameters" />
       <module name="spring-factroybean-demo" options="-parameters" />
+      <module name="spring-source-demo" options="-parameters" />
     </option>
   </component>
 </project>

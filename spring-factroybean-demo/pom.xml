@@ -9,7 +9,7 @@
         <version>2.4.4</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>org.example</groupId>
+    <groupId>org.org.example</groupId>
     <artifactId>spring-factroybean-demo</artifactId>
     <version>1.0-SNAPSHOT</version>
 

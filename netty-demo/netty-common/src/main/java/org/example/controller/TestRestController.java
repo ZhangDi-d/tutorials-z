@@ -4,6 +4,9 @@ import org.example.controller.response.Response;
 import org.example.entity.User;
 import org.springframework.web.bind.annotation.*;
 
+import java.time.LocalDateTime;
+import java.time.ZoneOffset;
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -211,4 +214,26 @@ public class TestRestController implements TestInter {
     }
 
 
+    public static void main(String[] args) {
+        final Long second = LocalDateTime.now().toEpochSecond(ZoneOffset.of("Z"));
+        System.out.println(second);
+
+        int a = 1618855563 ;
+        int b = 1618941963 ;
+
+        System.out.println(b-a);
+
+        List<Integer> objects = new ArrayList<>();
+        objects.add(5);
+        objects.add(6);
+        objects.add(7);
+
+        System.out.println(objects);
+
+        objects.add(0,10);
+        System.out.println(objects);
+
+    }
+
 }
+

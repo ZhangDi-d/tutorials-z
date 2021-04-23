@@ -1,23 +1,11 @@
 package org.example.test;
 
 import com.alibaba.fastjson.JSONObject;
-import io.netty.bootstrap.Bootstrap;
-import io.netty.bootstrap.ServerBootstrap;
-import io.netty.buffer.ByteBuf;
-import io.netty.buffer.PooledByteBufAllocator;
-import io.netty.buffer.Unpooled;
-import io.netty.channel.*;
-import io.netty.channel.nio.NioEventLoopGroup;
-import io.netty.channel.socket.SocketChannel;
-import io.netty.channel.socket.nio.NioServerSocketChannel;
-import io.netty.channel.socket.nio.NioSocketChannel;
-import io.netty.handler.codec.http.HttpRequestDecoder;
-import io.netty.handler.codec.http.HttpResponseEncoder;
+import org.example.AbstractTest;
 import lombok.Data;
 import org.apache.commons.lang.StringUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.example.AbstractTest;
 import org.example.entity.MyTestBean;
 import org.example.entity.User;
 import org.junit.jupiter.api.BeforeEach;
@@ -80,126 +68,6 @@ public class CommonTest extends AbstractTest {
         logger.info("before...");
     }
 
-    @Test
-    void test1() {
-        logger.info("test1...");
-        final byte[] bytes = new byte[1024];
-        long l = System.currentTimeMillis();
-        ByteBuf byteBuf;
-        for (int i = 0; i < 100000; i++) {
-            byteBuf = PooledByteBufAllocator.DEFAULT.directBuffer(1024);
-            byteBuf.writeBytes(bytes);
-            byteBuf.release();
-        }
-        logger.info("pool time: {} ms", System.currentTimeMillis() - l);
-    }
-
-    @Test
-    void test2() {
-        logger.info("test2...");
-        final byte[] bytes = new byte[1024];
-        long l = System.currentTimeMillis();
-        ByteBuf byteBuf;
-        for (int i = 0; i < 100000; i++) {
-            byteBuf = Unpooled.directBuffer(1024);
-            byteBuf.writeBytes(bytes);
-            byteBuf.release();
-        }
-        logger.info("un pool time: {} ms", System.currentTimeMillis() - l);
-    }
-
-    @Test
-    void testServer() {
-
-        //eventLoop-1-XXX
-
-        //Netty封装了NIO，Reactor模型，Boss，worker
-        // Boss线程
-        EventLoopGroup bossGroup = new NioEventLoopGroup();
-        // Worker线程
-        EventLoopGroup workerGroup = new NioEventLoopGroup();
-        try {
-
-            //1、创建对象
-            // Netty服务
-            //ServetBootstrap   ServerSocketChannel
-            ServerBootstrap server = new ServerBootstrap();
-
-
-            //2、配置参数
-            // 链路式编程
-            server.group(bossGroup, workerGroup)
-                    // 主线程处理类,看到这样的写法，底层就是用反射
-                    .channel(NioServerSocketChannel.class)
-                    // 子线程处理类 , Handler
-                    .childHandler(new ChannelInitializer<SocketChannel>() {
-                        // 客户端初始化处理
-                        protected void initChannel(SocketChannel client) throws Exception {
-                            // 无锁化串行编程
-                            //Netty对HTTP协议的封装，顺序有要求
-                            // HttpResponseEncoder 编码器
-                            // 责任链模式，双向链表Inbound OutBound
-                            client.pipeline().addLast(new HttpResponseEncoder());
-                            // HttpRequestDecoder 解码器
-                            client.pipeline().addLast(new HttpRequestDecoder());
-
-                        }
-                    })
-                    // 针对主线程的配置 分配线程最大数量 128
-                    .option(ChannelOption.SO_BACKLOG, 128)
-                    // 针对子线程的配置 保持长连接
-                    .childOption(ChannelOption.SO_KEEPALIVE, true);
-
-            //3、启动服务器
-            ChannelFuture f = server.bind(8083).sync();
-            f.channel().closeFuture().addListener(new ChannelFutureListener() {
-                @Override
-                public void operationComplete(ChannelFuture future) throws Exception {
-                    logger.info("close..");
-                }
-            });
-//            System.out.println("已启动，监听的端口是：" + 8083);
-//            f.channel().closeFuture().sync();
-        } catch (Exception e) {
-            e.printStackTrace();
-        } finally {
-            // 关闭线程池
-            bossGroup.shutdownGracefully();
-            workerGroup.shutdownGracefully();
-        }
-    }
-
-    @Test
-    void testClient() {
-        EventLoopGroup group = new NioEventLoopGroup();
-        try {
-
-            //1、创建对象
-            Bootstrap client = new Bootstrap();
-
-            //2、配置参数
-            // 链路式编程
-            client.group(group)
-                    // 主线程处理类,看到这样的写法，底层就是用反射
-                    .channel(NioSocketChannel.class)
-                    .option(ChannelOption.SO_KEEPALIVE, true)
-                    // 子线程处理类 , Handler
-                    .handler(new ChannelInitializer<SocketChannel>() {
-                        // 客户端初始化处理
-                        protected void initChannel(SocketChannel client) throws Exception {
-                            logger.info("client initChannel...");
-                        }
-                    });
-
-            //3 连接服务器
-            ChannelFuture channelFuture = client.connect("127.0.0.1", 8083).sync();
-            channelFuture.channel().closeFuture().sync();
-        } catch (Exception e) {
-            e.printStackTrace();
-        } finally {
-            group.shutdownGracefully();
-        }
-    }
 
     @Test
     void test5() {
@@ -340,9 +208,9 @@ public class CommonTest extends AbstractTest {
     @Test
     public void test17() {
         List<User> users = new ArrayList<>();
-        users.add(new User("zhagnsan",Arrays.asList("爬山","游泳")));
-        users.add(new User("lisi",Arrays.asList("足球","篮球")));
-        users.add(new User("lisi",Arrays.asList("足球","篮球","乒乓球")));
+        users.add(new User("zhagnsan", Arrays.asList("爬山", "游泳")));
+        users.add(new User("lisi", Arrays.asList("足球", "篮球")));
+        users.add(new User("lisi", Arrays.asList("足球", "篮球", "乒乓球")));
         Map<String, User> userMap = users.stream().collect(Collectors.toMap(User::getName, Function.identity(), (key1, key2) -> key2));
         System.out.println(userMap);
 
