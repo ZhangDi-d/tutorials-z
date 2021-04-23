@@ -4,26 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="249141f7-0f27-400c-af11-139fbcd3cc72" name="默认变更列表" comment="factory bean">
-      <change afterPath="$PROJECT_DIR$/netty-common/src/main/java/org/example/entity/MyTestBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/netty-common/src/main/resources/beanFactoryTest.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring-source-demo/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring-source-demo/src/main/java/org/example/Application.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring-source-demo/src/main/java/org/example/entity/MyTestBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring-source-demo/src/main/java/org/example/entity/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring-source-demo/src/main/resources/application.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring-source-demo/src/main/resources/beanFactoryTest.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring-source-demo/src/main/resources/log4j2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring-source-demo/src/test/java/example/AbstractTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring-source-demo/src/test/java/example/test/CommonTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/netty-common/src/main/java/org/example/controller/TestRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/netty-common/src/main/java/org/example/controller/TestRestController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/netty-common/src/main/java/org/example/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/netty-common/src/main/java/org/example/entity/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/netty-common/src/test/java/org/example/test/CommonTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/netty-common/src/test/java/org/example/test/CommonTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="249141f7-0f27-400c-af11-139fbcd3cc72" name="默认变更列表" comment="factory bean" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -126,6 +107,9 @@
       <recent name="D:\Work\Learn\github\zd\tutorials-z\spring-factroybean-demo\src\main\resources" />
       <recent name="D:\Work\Learn\github\zd\tutorials-z\spring-factroybean-demo\src\test\java" />
       <recent name="D:\Work\Learn\github\zd\tutorials-z\spring-factroybean-demo" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="org" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="org.example.controller" />
@@ -588,7 +572,7 @@
       <workItem from="1618194679507" duration="17935000" />
       <workItem from="1618449821067" duration="14671000" />
       <workItem from="1618469616069" duration="38410000" />
-      <workItem from="1619139468106" duration="1430000" />
+      <workItem from="1619139468106" duration="1782000" />
     </task>
     <task id="LOCAL-00001" summary="@pathvariable性能问题">
       <created>1618222278005</created>
