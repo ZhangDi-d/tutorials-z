@@ -13,4 +13,6 @@
     <bean id="testC" class="org.example.circularreference.TestC">
         <constructor-arg index="0" ref="testA"/>
     </bean>
+
+
 </beans>

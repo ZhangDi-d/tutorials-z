@@ -8,6 +8,9 @@ public class TestB {
 
     private TestC c;
 
+    public TestB() {
+    }
+
     public TestB(TestC c) {
         this.c = c;
     }
