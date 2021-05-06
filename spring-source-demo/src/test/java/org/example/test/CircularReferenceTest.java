@@ -1,15 +1,9 @@
 package org.example.test;
 
 import org.example.AbstractTest;
-import org.example.circularreference.TestC;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.BeanCurrentlyInCreationException;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
-
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.stream.Collectors;
 
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
@@ -59,7 +53,6 @@ public class CircularReferenceTest extends AbstractTest {
             System.out.println(e.getMessage());
         }
     }
-
 
 
 }

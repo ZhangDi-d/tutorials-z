@@ -5,16 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="249141f7-0f27-400c-af11-139fbcd3cc72" name="默认变更列表" comment="factory bean">
-      <change afterPath="$PROJECT_DIR$/../spring-source-demo/src/main/resources/circularReference-prototype.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring-source-demo/src/main/resources/circularReference-singleton.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-source-demo/src/main/java/org/example/aop/AspectJTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-source-demo/src/main/java/org/example/aop/Config.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-source-demo/src/main/java/org/example/aop/TestBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-source-demo/src/test/java/org/example/test/AopTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../spring-source-demo/log/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-source-demo/log/debug.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../spring-source-demo/log/info.log" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-source-demo/log/info.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-source-demo/src/main/java/org/example/circularreference/TestA.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-source-demo/src/main/java/org/example/circularreference/TestA.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-source-demo/src/main/java/org/example/circularreference/TestB.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-source-demo/src/main/java/org/example/circularreference/TestB.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-source-demo/src/main/java/org/example/circularreference/TestC.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-source-demo/src/main/java/org/example/circularreference/TestC.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-source-demo/src/main/resources/circularReference.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-source-demo/src/main/resources/circularReference.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-source-demo/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-source-demo/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-source-demo/src/main/java/org/example/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-source-demo/src/main/java/org/example/entity/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../spring-source-demo/src/test/java/org/example/test/CircularReferenceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-source-demo/src/test/java/org/example/test/CircularReferenceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-source-demo/src/test/java/org/example/test/CommonTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-source-demo/src/test/java/org/example/test/CommonTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -451,7 +452,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.CircularReferenceTest.test">
+  <component name="RunManager" selected="JUnit.AopTest.test1">
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -463,7 +464,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CircularReferenceTest.circleReferenceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AopTest.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="spring-source-demo" />
       <extension name="coverage">
         <pattern>
@@ -472,72 +473,72 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.example.test" />
-      <option name="MAIN_CLASS_NAME" value="org.example.test.CircularReferenceTest" />
-      <option name="METHOD_NAME" value="circleReferenceTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CircularReferenceTest.circularReferenceSetterAndPrototypeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="spring-source-demo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.example.test" />
-      <option name="MAIN_CLASS_NAME" value="org.example.test.CircularReferenceTest" />
-      <option name="METHOD_NAME" value="circularReferenceSetterAndPrototypeTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CircularReferenceTest.circularReferenceSetterAndSingletonTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="spring-source-demo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.example.test" />
-      <option name="MAIN_CLASS_NAME" value="org.example.test.CircularReferenceTest" />
-      <option name="METHOD_NAME" value="circularReferenceSetterAndSingletonTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CircularReferenceTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="spring-source-demo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.example.test" />
-      <option name="MAIN_CLASS_NAME" value="org.example.test.CircularReferenceTest" />
-      <option name="METHOD_NAME" value="test" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CircularReferenceTest.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="spring-source-demo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.example.test" />
-      <option name="MAIN_CLASS_NAME" value="org.example.test.CircularReferenceTest" />
+      <option name="MAIN_CLASS_NAME" value="org.example.test.AopTest" />
       <option name="METHOD_NAME" value="test1" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AopTest.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring-source-demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.test" />
+      <option name="MAIN_CLASS_NAME" value="org.example.test.AopTest" />
+      <option name="METHOD_NAME" value="test2" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CommonTest.test11114" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring-source-demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.test" />
+      <option name="MAIN_CLASS_NAME" value="org.example.test.CommonTest" />
+      <option name="METHOD_NAME" value="test11114" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CommonTest.test1115" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring-source-demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.test" />
+      <option name="MAIN_CLASS_NAME" value="org.example.test.CommonTest" />
+      <option name="METHOD_NAME" value="test1115" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CommonTest.test22" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring-source-demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.test" />
+      <option name="MAIN_CLASS_NAME" value="org.example.test.CommonTest" />
+      <option name="METHOD_NAME" value="test22" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -552,19 +553,19 @@
     </configuration>
     <list>
       <item itemvalue="Spring Boot.DemoApplication" />
-      <item itemvalue="JUnit.CircularReferenceTest.circleReferenceTest" />
-      <item itemvalue="JUnit.CircularReferenceTest.circularReferenceSetterAndPrototypeTest" />
-      <item itemvalue="JUnit.CircularReferenceTest.circularReferenceSetterAndSingletonTest" />
-      <item itemvalue="JUnit.CircularReferenceTest.test1" />
-      <item itemvalue="JUnit.CircularReferenceTest.test" />
+      <item itemvalue="JUnit.CommonTest.test22" />
+      <item itemvalue="JUnit.CommonTest.test11114" />
+      <item itemvalue="JUnit.CommonTest.test1115" />
+      <item itemvalue="JUnit.AopTest.test2" />
+      <item itemvalue="JUnit.AopTest.test1" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.CircularReferenceTest.test" />
-        <item itemvalue="JUnit.CircularReferenceTest.test1" />
-        <item itemvalue="JUnit.CircularReferenceTest.circularReferenceSetterAndPrototypeTest" />
-        <item itemvalue="JUnit.CircularReferenceTest.circularReferenceSetterAndSingletonTest" />
-        <item itemvalue="JUnit.CircularReferenceTest.circleReferenceTest" />
+        <item itemvalue="JUnit.AopTest.test1" />
+        <item itemvalue="JUnit.AopTest.test2" />
+        <item itemvalue="JUnit.CommonTest.test22" />
+        <item itemvalue="JUnit.CommonTest.test1115" />
+        <item itemvalue="JUnit.CommonTest.test11114" />
       </list>
     </recent_temporary>
   </component>
@@ -583,7 +584,7 @@
       <workItem from="1618194679507" duration="17935000" />
       <workItem from="1618449821067" duration="14671000" />
       <workItem from="1618469616069" duration="38410000" />
-      <workItem from="1619139468106" duration="30378000" />
+      <workItem from="1619139468106" duration="73746000" />
     </task>
     <task id="LOCAL-00001" summary="@pathvariable性能问题">
       <created>1618222278005</created>
