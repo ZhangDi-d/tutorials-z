@@ -17,7 +17,7 @@ public class CircularReferenceTest extends AbstractTest {
     @Test
     void circularReferenceTest() {
         try {
-            new ClassPathXmlApplicationContext("circularReference.xml");
+            new ClassPathXmlApplicationContext("circularreference/circularReference.xml");
         } catch (Exception e) {
             //因为要在创建 testC 时抛出；
             Throwable e1 = e.getCause().getCause().getCause();
@@ -36,7 +36,7 @@ public class CircularReferenceTest extends AbstractTest {
     void circularReferenceSetterAndSingletonTest() {
         try {
             //测试的时候要为 TestA TestB TestC等增加空参构造器
-            ClassPathXmlApplicationContext ctx = new ClassPathXmlApplicationContext("circularReference-singleton.xml");
+            ClassPathXmlApplicationContext ctx = new ClassPathXmlApplicationContext("circularreference/circularReference-singleton.xml");
             System.out.println(ctx.getBean("testA-p"));
         } catch (Exception e) {
 
@@ -47,7 +47,7 @@ public class CircularReferenceTest extends AbstractTest {
     void circularReferenceSetterAndPrototypeTest() {
         try {
             //测试的时候要为 TestA TestB TestC等增加空参构造器
-            ClassPathXmlApplicationContext ctx = new ClassPathXmlApplicationContext("circularReference-prototype.xml");
+            ClassPathXmlApplicationContext ctx = new ClassPathXmlApplicationContext("circularreference/circularReference-prototype.xml");
             System.out.println(ctx.getBean("testA-p"));
         } catch (Exception e) {
             System.out.println(e.getMessage());

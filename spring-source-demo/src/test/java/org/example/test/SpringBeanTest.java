@@ -21,7 +21,7 @@ public class SpringBeanTest extends AbstractTest {
     @Test
     @SuppressWarnings("deprecation")
     void test1() {
-        BeanFactory bf = new XmlBeanFactory(new ClassPathResource("beanFactoryTest.xml")); // bean 解析
+        BeanFactory bf = new XmlBeanFactory(new ClassPathResource("beanfactory/beanFactoryTest.xml")); // bean 解析
         MyTestBean bean = (MyTestBean) bf.getBean("myTestBean"); // bean 加载 //、、。。
         assertEquals("testStr", bean.getTestStr());
     }
@@ -29,7 +29,7 @@ public class SpringBeanTest extends AbstractTest {
     @Test
     @SuppressWarnings("deprecation")
     void factoryBeanTest() {
-        BeanFactory bf = new XmlBeanFactory(new ClassPathResource("beanFactoryTest.xml"));
+        BeanFactory bf = new XmlBeanFactory(new ClassPathResource("beanfactory/beanFactoryTest.xml"));
         //bean from FactoryBean
         Car car = (Car) bf.getBean("car");
         System.out.println(car.toString());

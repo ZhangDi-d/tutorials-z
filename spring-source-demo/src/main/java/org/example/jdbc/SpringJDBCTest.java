@@ -11,7 +11,7 @@ import java.util.List;
  */
 public class SpringJDBCTest {
     public static void main(String[] args) {
-        ApplicationContext act = new ClassPathXmlApplicationContext("bean.xml");
+        ApplicationContext act = new ClassPathXmlApplicationContext("jdbc/bean.xml");
         PersonService userService = (PersonService) act.getBean("userService");
         Person person = new Person();
         person.setName("张三");
