@@ -18,7 +18,7 @@ public class Config {
     }
 
     @Bean
-    public TestBean testBean(){
+    public TestBean testBean() {
         return new TestBean();
     }
 }

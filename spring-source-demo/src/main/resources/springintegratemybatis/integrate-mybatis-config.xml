@@ -6,6 +6,6 @@
         <typeAlias alias="Student" type="org.example.independentmybatis.Student"/>
     </typeAliases>
     <mappers>
-        <mapper resource="independentmybatis/StudentMapper.xml" />
+        <mapper resource="independentmybatis/StudentMapper.xml"/>
     </mappers>
 </configuration>

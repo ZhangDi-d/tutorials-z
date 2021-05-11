@@ -27,7 +27,7 @@ public class TestMapper {
 
     @Test
     public void getStudent() {
-         try (SqlSession sqlSession = sqlSessionFactory.openSession()) {
+        try (SqlSession sqlSession = sqlSessionFactory.openSession()) {
             StudentMapper StudentMapper = sqlSession.getMapper(StudentMapper.class);
             Student Student = StudentMapper.getStudent(1);
             System.out.println("name: " + Student.getName() + "|age: " + Student.getAge());

@@ -10,13 +10,13 @@ import org.springframework.transaction.annotation.Transactional;
  * @date 2021-05-06
  */
 @Service
-public class AServiceImpl implements AService{
+public class AServiceImpl implements AService {
 
     @Override
     @Transactional(propagation = Propagation.REQUIRED)
     public void a() {
         //需要配合 @EnableAspectJAutoProxy(exposeProxy = true) 使用
-        ((AService)AopContext.currentProxy()).b();
+        ((AService) AopContext.currentProxy()).b();
     }
 
     @Override

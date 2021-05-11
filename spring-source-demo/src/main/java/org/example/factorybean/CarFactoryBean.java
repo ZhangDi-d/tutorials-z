@@ -22,7 +22,7 @@ public class CarFactoryBean implements FactoryBean<Car> {
     @Override
     public Car getObject() throws Exception {
         String[] strings = carInfo.split(",");
-        if (strings.length<3) throw new RuntimeException("carInfo 参数错误");
+        if (strings.length < 3) throw new RuntimeException("carInfo 参数错误");
         Car car = new Car();
         car.setMaxSpeed(Integer.parseInt(strings[0]));
         car.setBrand(strings[1]);

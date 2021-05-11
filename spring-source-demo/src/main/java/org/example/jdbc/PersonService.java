@@ -8,5 +8,6 @@ import java.util.List;
  */
 public interface PersonService {
     public void save(Person person);
+
     public List<Person> getPersons();
 }

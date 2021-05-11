@@ -6,6 +6,7 @@ package org.example.aop;
  */
 public interface AService {
     public void a();
+
     public void b();
 }
 
