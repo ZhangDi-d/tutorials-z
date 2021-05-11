@@ -12,6 +12,8 @@
     <groupId>org.org.example</groupId>
     <artifactId>spring-source-demo</artifactId>
     <version>0.0.1-RELEASE</version>
+    <!--springmvc-->
+    <packaging>war</packaging>
 
     <properties>
         <java.version>14</java.version>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+    <bean id="simpleUrlMapping"
+          class="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping">
+        <property name="mappings">
+            <props>
+                <prop key="/userlist.htm">personController</prop>
+            </props>
+        </property>
+    </bean>
+    <!-- 这里的 id="personController"对应的是<bean id="simpleUrlMapping">中的<prop>里面的value -->
+    <bean id="personController" class="org.example.springmvc.PersonController"/>
+</beans>
