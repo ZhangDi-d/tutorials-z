@@ -379,66 +379,6 @@ public class CommonTest extends AbstractTest {
         }
         return index.toString();
     }
-
-    @Test
-    void test22() {
-        String json = """
-                {
-                     "goods_search_info_list" : {
-                             "10173960" : {
-                                "recall_pool" : "0040000000000000"
-                             },
-                             "14598435" : {
-                                "recall_pool" : "0000000000000800"
-                             },
-                             "23683744" : {
-                                "recall_pool" : "0200000000000000"
-                             },
-                             "24408744" : {
-                                "recall_pool" : "0060000000000000"
-                             },
-                             "25008530" : {
-                                "recall_pool" : "0001000000000000"
-                             },
-                             "39227499" : {
-                                "recall_pool" : "0200000000000008"
-                             },
-                             "47864158" : {
-                                "recall_pool" : "0000000000000008"
-                             },
-                             "59888200" : {
-                                "recall_pool" : "8000000000000000"
-                             },
-                             "64164940" : {
-                                "recall_pool" : "0000000000000008"
-                             },
-                             "70855986" : {
-                                "recall_pool" : "0000001000000000"
-                             }
-                          }
-                    
-                }              
-                """;
-        ObjectMapper mapper = new ObjectMapper();
-        Map<String, Object> map;
-
-        try {
-            map = mapper.readValue(json, new TypeReference<Map<String, Object>>() {
-            });
-            LinkedHashMap<String, Object> linkedHashMap = (LinkedHashMap) map.get("goods_search_info_list");
-            for (Map.Entry<String, Object> entry : linkedHashMap.entrySet()) {
-                LinkedHashMap<String, Object> inner = (LinkedHashMap) linkedHashMap.get(entry.getKey());
-                String recallPool = (String) inner.get("recall_pool");
-                System.out.println(entry.getKey() + " :[ " + hex2Binary64bitAndRecallFlag(recallPool) + "]");
-            }
-
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-
-    }
-
-
 }
 
 
