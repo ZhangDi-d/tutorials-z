@@ -11,11 +11,13 @@
         <module name="netty-client-demo" />
         <module name="spring-source-demo" />
         <module name="netty-server-demo" />
+        <module name="kafka-simple-demo" />
       </profile>
     </annotationProcessing>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="kafka-simple-demo" options="-parameters" />
       <module name="netty-client-demo" options="-parameters" />
       <module name="netty-common" options="-parameters" />
       <module name="netty-server-demo" options="-parameters" />

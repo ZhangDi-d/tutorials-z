@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app id="WebApp_ID" version="3.0" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+    <display-name>springmvc</display-name>
+    <!-- 使用 ContextLoaderListener 配置时，需要告诉它 Spring 配置文件的位置 -->
+    <context-param>
+        <param-name>contextConfigLocation</param-name>
+        <param-value>classpath:src/main/webapp/WEB_INF/applicationContext.xml</param-value>
+    </context-param>
+    <!-- SpringMVC 的前端控制器 -->
+    <!-- 当 DispatcherServlet 载入后，它将从一个 XML 文件中载入 Spring 的应用上下文，该 XML 文件的名
+    字取决于<servlet-name> -->
+    <!-- 这里 DispatcherServlet 将试图从一个叫作 Springmvc-servlet.xml 的文件中载入应用上下文，
+    其默认位于 WEB-INF 目录下 -->
+    <servlet>
+        <servlet-name>dispatcherServlet</servlet-name>
+        <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>dispatcherServlet</servlet-name>
+        <url-pattern>*.htm</url-pattern>
+    </servlet-mapping>
+
+    <!-- 配置上下文载入器 -->
+    <!-- 上下文载入器载入除 DispatcherServlet 载入的配置文件之外的其他上下文配置文件 -->
+    <!-- 最常用的上下文载入器是一个 Servlet 监听器，其名称为 ContextLoaderListener -->
+    <listener>
+        <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+    </listener>
+
+</web-app>

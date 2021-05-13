@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns="http://www.springframework.org/schema/beans"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+         http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+    <!--singleton 范围的循环依赖-->
+    <bean id="testA-p" class="org.example.circularreference.TestA">
+        <property name="b" ref="testB-p"/>
+    </bean>
+    <bean id="testB-p" class="org.example.circularreference.TestB">
+        <property name="c" ref="testC-p"/>
+    </bean>
+    <bean id="testC-p" class="org.example.circularreference.TestC">
+        <property name="a" ref="testA-p"/>
+    </bean>
+</beans>

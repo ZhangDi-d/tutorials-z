@@ -71,6 +71,31 @@ public class CommonTest extends AbstractTest {
         return result;
     }
 
+    /**
+     * 16 -> 2 不足补0  并且输出  recall flag index
+     *
+     * @param hexString
+     * @return
+     */
+    public static String hex2Binary64bitAndRecallFlag(String hexString) {
+        StringBuilder preBin = new StringBuilder(new BigInteger(hexString, 16).toString(2));
+        int length = preBin.length();
+        if (length < 64) {
+            for (int i = 0; i < 64 - length; i++) {
+                preBin.insert(0, "0");
+            }
+        }
+        String binString = preBin.toString();
+
+        StringBuilder index = new StringBuilder();
+        for (int i = 0; i < binString.length(); i++) {
+            if ("1".equals(String.valueOf(binString.charAt(i)))) {
+                index.append(i).append(" ");
+            }
+        }
+        return index.toString();
+    }
+
     @BeforeEach
     void testbefore() {
         logger.info("before...");
@@ -248,8 +273,146 @@ public class CommonTest extends AbstractTest {
     }
 
 
+    @Test
+    public void test20() {
+        ObjectMapper mapper = new ObjectMapper();
+        Map<String, Object> map;
+        try {
+            map = mapper.readValue(new File("D:\\Work\\Learn\\alibaba\\nacos\\nacos-group\\nacos\\test\\src\\test\\resources\\aa.json"),
+                    new com.fasterxml.jackson.core.type.TypeReference<Map<String, Object>>() {
+                    });
+            LinkedHashMap<String, Object> linkedHashMap = (LinkedHashMap) map.get("data");
+            ArrayList<Integer> goods_id_list = (ArrayList) linkedHashMap.get("goods_id_list");
+            LinkedHashMap<String, LinkedHashMap> goods_search_info_list = (LinkedHashMap) linkedHashMap.get("goods_search_info_list");
+
+            for (Integer integer : goods_id_list) {
+                LinkedHashMap<String, String> linkedHashMap1 = goods_search_info_list.get(String.valueOf(integer));
+                String recall_pool = linkedHashMap1.get("recall_pool");
+                System.out.println(integer + " :[ " + hex2Binary64bitAndRecallFlag(recall_pool) + "]");
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
 
 
+    @Test
+    void test21() {
+        System.out.println("8000000000000000 " + hex2Binary64bitAndRecallFlag("8000000000000000"));  // 0
+        System.out.println("0200000000000808 " + hex2Binary64bitAndRecallFlag("0200000000000808"));  //6 52 60
+        System.out.println("0200000000000800 " + hex2Binary64bitAndRecallFlag("0200000000000800"));  //6 52
+        System.out.println("0000000000000808 " + hex2Binary64bitAndRecallFlag("0000000000000808"));  //52 60
+        System.out.println("0200000000000000 " + hex2Binary64bitAndRecallFlag("0200000000000000"));  //6
+        System.out.println("0200000000000008 " + hex2Binary64bitAndRecallFlag("0200000000000008"));  //6 60
+
+
+        System.out.println("0000000000000001 " + hex2Binary64bitAndRecallFlag("0000000000000001"));  //61
+        System.out.println("0000000000000002 " + hex2Binary64bitAndRecallFlag("0000000000000002"));  //62
+        System.out.println("0000000000000004 " + hex2Binary64bitAndRecallFlag("0000000000000004"));  //63
+
+        System.out.println("0000000000200000 " + hex2Binary64bitAndRecallFlag("0000000000200000"));  // 42
+        System.out.println("1200000000000808 " + hex2Binary64bitAndRecallFlag("1200000000000808"));  // 3 6 52 60
+        System.out.println("1000000000000000 " + hex2Binary64bitAndRecallFlag("1000000000000000"));  // 3
+
+        System.out.println("0000001000000000 " + hex2Binary64bitAndRecallFlag("0000001000000000"));  // 27
+        System.out.println("0000001000010000 " + hex2Binary64bitAndRecallFlag("0000001000010000"));  // 27 47
+
+
+        System.out.println("0000000000210000 " + hex2Binary64bitAndRecallFlag("0000000000210000"));  // 42 47
+        System.out.println("1000000000010000 " + hex2Binary64bitAndRecallFlag("1000000000010000"));  // 3 47
+        System.out.println("0000000800010000 " + hex2Binary64bitAndRecallFlag("0000000800010000"));  // 28 47
+
+
+    }
+
+
+    @Test
+    void test22() {
+        String json = """
+                {
+                      "goods_search_info_list" : {
+                               "12394772" : {
+                                  "recall_pool" : "0000001000000000"
+                               },
+                               "17816544" : {
+                                  "recall_pool" : "0000000000000002"
+                               },
+                               "25029722" : {
+                                  "recall_pool" : "0000000000000008"
+                               },
+                               "37037316" : {
+                                  "recall_pool" : "0001000000000000"
+                               },
+                               "46828413" : {
+                                  "recall_pool" : "8000000000000000"
+                               },
+                               "47274307" : {
+                                  "recall_pool" : "0000000000000002"
+                               },
+                               "50126464" : {
+                                  "recall_pool" : "0040000000000000"
+                               },
+                               "65146974" : {
+                                  "recall_pool" : "8000000000000000"
+                               },
+                               "73932889" : {
+                                  "recall_pool" : "8000000000000000"
+                               },
+                               "74876813" : {
+                                  "recall_pool" : "0000000000000008"
+                               }
+                            }
+                      
+                }              
+                """;
+        ObjectMapper mapper = new ObjectMapper();
+        Map<String, Object> map;
+
+        try {
+            map = mapper.readValue(json, new TypeReference<Map<String, Object>>() {
+            });
+            LinkedHashMap<String, Object> linkedHashMap = (LinkedHashMap) map.get("goods_search_info_list");
+            for (Map.Entry<String, Object> entry : linkedHashMap.entrySet()) {
+                LinkedHashMap<String, Object> inner = (LinkedHashMap) linkedHashMap.get(entry.getKey());
+                String recallPool = (String) inner.get("recall_pool");
+                System.out.println(entry.getKey() + " :[ " + hex2Binary64bitAndRecallFlag(recallPool) + "]");
+            }
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+    }
+
+
+    @Test
+    void test11111() {
+        List<String> reqResList = new ArrayList<>();
+        reqResList.add("current date=" + (new Date()));
+        System.out.println(reqResList);
+        System.out.println(reqResList);
+    }
+
+    @Test
+    void test221() {
+        List<User> users = Arrays.asList(new User("zhagnsan", new ArrayList<>()), new User("lisi", new ArrayList<>()), new User("wangwu", new ArrayList<>()));
+        List<User> collect = users.stream().peek(user -> {
+            if (user.getName().equals("lisi")) {
+                user.setHabits(Collections.singletonList("pashang"));
+            }
+        }).collect(Collectors.toList());
+
+        System.out.println(collect);
+    }
+
+    @Test
+    void test222() {
+        ArrayList<Integer> objects0 = new ArrayList<>();
+        objects0.add(0);
+        objects0.add(1);
+        objects0.add(2);
+
+    }
 }
 
 

@@ -1,20 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="spring-source-demo:war exploded" />
+    </artifacts-to-build>
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="249141f7-0f27-400c-af11-139fbcd3cc72" name="默认变更列表" comment="factory bean">
-      <change afterPath="$PROJECT_DIR$/../spring-source-demo/src/main/java/org/example/aop/AspectJTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring-source-demo/src/main/java/org/example/aop/Config.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring-source-demo/src/main/java/org/example/aop/TestBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring-source-demo/src/test/java/org/example/test/AopTest.java" afterDir="false" />
+    <list default="true" id="249141f7-0f27-400c-af11-139fbcd3cc72" name="默认变更列表" comment="springboot">
+      <change afterPath="$PROJECT_DIR$/../kafka-demo/kafka-simple-demo/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../kafka-demo/kafka-simple-demo/src/main/java/org/example/consumer/KConsumer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../kafka-demo/kafka-simple-demo/src/main/java/org/example/producer/KProducer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../kafka-demo/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-source-demo/log/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-source-demo/log/debug.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-source-demo/log/info.log" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-source-demo/log/info.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-source-demo/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-source-demo/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-source-demo/src/main/java/org/example/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-source-demo/src/main/java/org/example/entity/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-source-demo/src/test/java/org/example/test/CircularReferenceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-source-demo/src/test/java/org/example/test/CircularReferenceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/debug/DEBUG-2021-04-19_1.log.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/debug/DEBUG-2021-04-19_2.log.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/debug/DEBUG-2021-04-19_3.log.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/debug/DEBUG-2021-04-19_4.log.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/debug/DEBUG-2021-04-19_5.log.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/netty-common/log/debug/DEBUG-2021-04-21_1.log.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/netty-common/log/info/INFO-2021-04-21_1.log.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/netty-common/src/test/java/org/example/test/CommonTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/netty-common/src/test/java/org/example/test/CommonTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../spring-source-demo/src/test/java/org/example/test/CommonTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-source-demo/src/test/java/org/example/test/CommonTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -68,10 +79,18 @@
     <setting file="jar://$MAVEN_REPOSITORY$/io/netty/netty-transport/4.1.58.Final/netty-transport-4.1.58.Final-sources.jar!/io/netty/channel/DefaultChannelPipeline.java" root0="SKIP_INSPECTION" />
     <setting file="jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.6.Final/netty-all-4.1.6.Final-sources.jar!/io/netty/util/concurrent/EventExecutor.java" root0="SKIP_INSPECTION" />
     <setting file="jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.6.Final/netty-all-4.1.6.Final-sources.jar!/io/netty/util/concurrent/SingleThreadEventExecutor.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-tx/5.3.3/spring-tx-5.3.3-sources.jar!/org/springframework/transaction/interceptor/TransactionAspectSupport.java" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="KubernetesApiPersistence">
     <option name="context" value="docker-desktop" />
     <option name="namespace" value="default" />
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -81,9 +100,6 @@
         <option name="userSettingsFile" value="D:\Program Files\Maven\apache-maven-3.6.3-bin\apache-maven-3.6.3\conf\settings.xml" />
       </MavenGeneralSettings>
     </option>
-  </component>
-  <component name="ProblemsViewState">
-    <option name="selectedIndex" value="1" />
   </component>
   <component name="ProjectId" id="1qm8J6adGXVTshI2PZMkJzfrBtj" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -102,23 +118,31 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="15" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../spring-source-demo/src/main/resources" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/jakarta-taglibs-standard-1.1.2/jakarta-taglibs-standard-1.1.2/tld/c.tld" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="模块" />
     <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="project.structure.side.proportion" value="0.40229884" />
+    <property name="settings.editor.selected.configurable" value="project.propDebugger" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Work\Learn\github\zd\tutorials-z\spring-source-demo\src\main\webapp\WEB_INF\lib" />
       <recent name="D:\Work\Learn\github\zd\tutorials-z\spring-source-demo\src\main\resources" />
       <recent name="D:\Work\Learn\github\zd\tutorials-z\spring-source-demo" />
       <recent name="D:\Work\Learn\github\zd\tutorials-z\spring-source-demo\src\test\java" />
       <recent name="D:\Work\Learn\github\zd\tutorials-z\spring-source-demo\src\main\java\org\example" />
-      <recent name="D:\Work\Learn\github\zd\tutorials-z\spring-factroybean-demo\src\main\resources" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Work\Learn\github\zd\tutorials-z\spring-source-demo\src\main\webapp\WEB-INF" />
+      <recent name="D:\Work\Learn\github\zd\tutorials-z\spring-source-demo\src\main\resources" />
+      <recent name="D:\Work\Learn\github\zd\tutorials-z\spring-source-demo\src\main\webapp\WEB_INF" />
+      <recent name="D:\Work\Learn\github\zd\tutorials-z\spring-source-demo\src\main\webapp\WEB_INF\jsp" />
+      <recent name="D:\Work\Learn\github\zd\tutorials-z\spring-source-demo\src\main\webapp" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="org" />
@@ -452,7 +476,46 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.AopTest.test1">
+  <component name="RunManager" selected="应用程序.KConsumer">
+    <configuration name="FunctionalInterfaceTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.springboot.FunctionalInterfaceTest" />
+      <module name="spring-source-demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.springboot.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="KConsumer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.consumer.KConsumer" />
+      <module name="kafka-simple-demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.consumer.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="KProducer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.producer.KProducer" />
+      <module name="kafka-simple-demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.producer.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -464,40 +527,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AopTest.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="spring-source-demo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.example.test" />
-      <option name="MAIN_CLASS_NAME" value="org.example.test.AopTest" />
-      <option name="METHOD_NAME" value="test1" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AopTest.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="spring-source-demo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.example.test" />
-      <option name="MAIN_CLASS_NAME" value="org.example.test.AopTest" />
-      <option name="METHOD_NAME" value="test2" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CommonTest.test11114" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="spring-source-demo" />
+    <configuration name="CommonTest.test22 (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="netty-common" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="org.example.test.*" />
@@ -506,23 +537,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="org.example.test" />
       <option name="MAIN_CLASS_NAME" value="org.example.test.CommonTest" />
-      <option name="METHOD_NAME" value="test11114" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CommonTest.test1115" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="spring-source-demo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.example.test" />
-      <option name="MAIN_CLASS_NAME" value="org.example.test.CommonTest" />
-      <option name="METHOD_NAME" value="test1115" />
+      <option name="METHOD_NAME" value="test22" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -551,21 +566,109 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="springmvc-test" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.64" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="spring-source-demo:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/spring_source_demo_war_exploded" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="bb208a23-29b7-4d2f-93d0-49609c4e8f80" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="53297" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Profile">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="spring-source-demo:war exploded" />
+        </option>
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Spring Boot.DemoApplication" />
+      <item itemvalue="Tomcat Server.springmvc-test" />
+      <item itemvalue="应用程序.FunctionalInterfaceTest" />
       <item itemvalue="JUnit.CommonTest.test22" />
-      <item itemvalue="JUnit.CommonTest.test11114" />
-      <item itemvalue="JUnit.CommonTest.test1115" />
-      <item itemvalue="JUnit.AopTest.test2" />
-      <item itemvalue="JUnit.AopTest.test1" />
+      <item itemvalue="JUnit.CommonTest.test22 (1)" />
+      <item itemvalue="应用程序.KProducer" />
+      <item itemvalue="应用程序.KConsumer" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.AopTest.test1" />
-        <item itemvalue="JUnit.AopTest.test2" />
+        <item itemvalue="应用程序.KConsumer" />
+        <item itemvalue="应用程序.KProducer" />
+        <item itemvalue="JUnit.CommonTest.test22 (1)" />
         <item itemvalue="JUnit.CommonTest.test22" />
-        <item itemvalue="JUnit.CommonTest.test1115" />
-        <item itemvalue="JUnit.CommonTest.test11114" />
+        <item itemvalue="应用程序.FunctionalInterfaceTest" />
       </list>
     </recent_temporary>
   </component>
@@ -584,7 +687,11 @@
       <workItem from="1618194679507" duration="17935000" />
       <workItem from="1618449821067" duration="14671000" />
       <workItem from="1618469616069" duration="38410000" />
-      <workItem from="1619139468106" duration="73746000" />
+      <workItem from="1619139468106" duration="93038000" />
+      <workItem from="1620436771315" duration="36178000" />
+      <workItem from="1620697940416" duration="21496000" />
+      <workItem from="1620781386441" duration="16105000" />
+      <workItem from="1620810937909" duration="16476000" />
     </task>
     <task id="LOCAL-00001" summary="@pathvariable性能问题">
       <created>1618222278005</created>
@@ -628,7 +735,70 @@
       <option name="project" value="LOCAL" />
       <updated>1618829203944</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="jdk proxy">
+      <created>1620463125579</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1620463125579</updated>
+    </task>
+    <task id="LOCAL-00008" summary="jdbc">
+      <created>1620610658848</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1620610658848</updated>
+    </task>
+    <task id="LOCAL-00009" summary="independent use mybatis">
+      <created>1620618450957</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1620618450957</updated>
+    </task>
+    <task id="LOCAL-00010" summary="spring integrate mybatis">
+      <created>1620633495771</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1620633495771</updated>
+    </task>
+    <task id="LOCAL-00011" summary="spring tx">
+      <created>1620697117651</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1620697117651</updated>
+    </task>
+    <task id="LOCAL-00012" summary="format">
+      <created>1620697331841</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1620697331841</updated>
+    </task>
+    <task id="LOCAL-00013" summary="springmvc：并不能启动，代码大致如此，不深入研究xml和jsp">
+      <created>1620725930207</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1620725930207</updated>
+    </task>
+    <task id="LOCAL-00014" summary="rmi">
+      <created>1620810579170</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1620810579170</updated>
+    </task>
+    <task id="LOCAL-00015" summary="springboot">
+      <created>1620820454509</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1620820454509</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -651,7 +821,16 @@
     <MESSAGE value="netty 1" />
     <MESSAGE value="springmvc" />
     <MESSAGE value="factory bean" />
-    <option name="LAST_COMMIT_MESSAGE" value="factory bean" />
+    <MESSAGE value="jdk proxy" />
+    <MESSAGE value="jdbc" />
+    <MESSAGE value="independent use mybatis" />
+    <MESSAGE value="spring integrate mybatis" />
+    <MESSAGE value="spring tx" />
+    <MESSAGE value="format" />
+    <MESSAGE value="springmvc：并不能启动，代码大致如此，不深入研究xml和jsp" />
+    <MESSAGE value="rmi" />
+    <MESSAGE value="springboot" />
+    <option name="LAST_COMMIT_MESSAGE" value="springboot" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -661,6 +840,16 @@
           <line>22</line>
           <option name="timeStamp" value="61" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-tx/5.3.3/spring-tx-5.3.3-sources.jar!/org/springframework/transaction/config/AnnotationDrivenBeanDefinitionParser.java</url>
+          <line>121</line>
+          <option name="timeStamp" value="62" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/5.3.3/spring-beans-5.3.3-sources.jar!/org/springframework/beans/factory/xml/XmlReaderContext.java</url>
+          <line>145</line>
+          <option name="timeStamp" value="63" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <watches-manager>
@@ -668,7 +857,8 @@
         <watch expression="e.getCause().getCause().getCause()" language="JAVA" />
       </configuration>
       <configuration name="Application">
-        <watch expression="this.getClass()" language="JAVA" />
+        <watch expression="parserContext.getRegistry()" language="JAVA" />
+        <watch expression="element.getTagName()" language="JAVA" />
       </configuration>
     </watches-manager>
   </component>

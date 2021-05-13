@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns="http://www.springframework.org/schema/beans"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+         http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+    <bean id="myTestBean" class="org.example.entity.MyTestBean"/>
+
+    <bean id="car" class="org.example.factorybean.CarFactoryBean">
+        <property name="carInfo" value="200,五菱宏光,200000"/>
+    </bean>
+
+    <bean id="car1" class="org.example.entity.Car">
+        <property name="maxSpeed" value="300"/>
+        <property name="brand" value="宝马"/>
+        <property name="price" value="100000"/>
+    </bean>
+</beans>
